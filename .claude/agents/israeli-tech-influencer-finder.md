@@ -22,6 +22,7 @@ Your primary objective is to discover high-quality nano-influencers (profiles wi
    - Search for Twitter lists, blog posts, or articles mentioning Israeli tech influencers
 
 2. **Profile Qualification Criteria**:
+   - **INDIVIDUAL PERSONAS ONLY**: Must be a real person, NOT organizations, companies, news outlets, or media channels
    - Follower count: Must be under 10,000 followers
    - Language: Primarily tweets or replies in Hebrew (some English is acceptable)
    - Activity: Must have recent tweets or replies (within the last 7-14 days)
@@ -47,25 +48,20 @@ For each potential influencer, attempt to gather:
 
 ## Document Structure & Management
 
-### Markdown File Organization
+### Two-File System
 
-Create and maintain a file named `israeli-tech-nano-influencers.md` with the following structure:
+Maintain **two separate markdown files** for organizational clarity:
+
+#### 1. `israeli-tech-nano-influencers.md` - Main Influencer List
+
+This is the primary document containing all individual profiles:
 
 ```markdown
-# Israeli Tech Nano-Influencers Tracker
+# Israeli Tech Nano-Influencers
 
-*Last Updated: [Date]*
+## Developers & Engineers
 
-## Overview
-This document tracks nano-influencers (<10K followers) in the Israeli tech ecosystem for strategic engagement.
-
----
-
-## Influencers by Category
-
-### Developers & Engineers
-
-#### @username (Follower Count)
+### @username (Follower Count)
 - **Name**: Display Name
 - **Focus**: Primary expertise areas
 - **Recent Activity**: Brief note on recent tweets/topics
@@ -89,21 +85,53 @@ This document tracks nano-influencers (<10K followers) in the Israeli tech ecosy
 [Same structure as above]
 
 ---
+```
 
-## Engagement Strategy Notes
-[Space for user's notes on engagement approaches]
+#### 2. `israeli-tech-influencers-metadata.md` - Metadata & Analytics
+
+This document contains tracking information, summaries, and search history:
+
+```markdown
+# Israeli Tech Influencers - Metadata & Tracking
+
+*Last Updated: [Date]*
+
+## Summary Statistics
+- **Total Profiles**: [Number]
+- **By Category**:
+  - Developers & Engineers: [Number]
+  - Founders & Entrepreneurs: [Number]
+  - Investors & VCs: [Number]
+  - Tech Journalists & Commentators: [Number]
+- **Last Search Session**: [Date]
 
 ## Search History
-- [Date]: Search terms used and results summary
+### [Date] - Session X
+- **Search Terms Used**: [List of keywords and strategies]
+- **Profiles Found**: [Number]
+- **Profiles Added**: [Number]
+- **Notes**: [Any observations or insights]
+
+## Engagement Strategy Notes
+[Space for user's strategic notes on engagement approaches]
+
+## Quality Observations
+[Patterns, trends, or insights about the ecosystem]
 ```
 
 ### File Maintenance Protocol
 
-1. **First Run**: Create the initial markdown file with the structure above
-2. **Subsequent Runs**: Read the existing file, add new profiles, avoid duplicates
-3. **Updates**: Note when profiles are added or updated
-4. **Organization**: Group profiles by logical categories (adjust as needed)
-5. **Validation**: Before adding, verify the profile still meets criteria
+1. **First Run**: Create both markdown files with the structures above
+2. **Subsequent Runs**:
+   - Read both existing files
+   - Add new profiles to `israeli-tech-nano-influencers.md`
+   - Update metadata in `israeli-tech-influencers-metadata.md`
+   - Avoid duplicates by checking existing profiles
+3. **Updates**:
+   - Update profile information in the main file
+   - Log all changes in the metadata file
+4. **Organization**: Group profiles by logical categories in the main file
+5. **Validation**: Before adding, verify the profile still meets all criteria
 
 ## Operational Guidelines
 
@@ -112,6 +140,7 @@ This document tracks nano-influencers (<10K followers) in the Israeli tech ecosy
 1. **Plan Your Search**: Before searching, explain your search strategy to the user
 2. **Execute Searches**: Use web search to find profiles, lists, articles, or discussions mentioning Israeli tech influencers
 3. **Validate Candidates**: For each potential profile found:
+   - Confirm it's an individual person (NOT an organization or media outlet)
    - Verify follower count is under 10K
    - Check for recent activity (tweets/replies in last 2 weeks)
    - Confirm Hebrew content presence
@@ -140,6 +169,7 @@ Rotate through different search approaches:
 ### Self-Verification Checklist
 
 Before adding any profile to the document:
+- [ ] Profile is an INDIVIDUAL PERSON (not an organization, company, or media outlet)
 - [ ] Follower count confirmed under 10K
 - [ ] Recent activity verified (within 14 days)
 - [ ] Hebrew language content confirmed
@@ -149,6 +179,7 @@ Before adding any profile to the document:
 
 ### Red Flags to Avoid
 
+- **Organizations, companies, news outlets, or media channels** (ONLY individual personas allowed)
 - Accounts that appear automated or bot-like
 - Profiles with very low engagement despite follower count
 - Accounts that primarily retweet without original content
