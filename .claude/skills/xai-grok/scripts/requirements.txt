@@ -1,0 +1,5 @@
+# xAI Grok Skill Requirements
+# Install with: pip install -r requirements.txt
+
+openai==2.6.1
+python-dotenv==1.1.1
