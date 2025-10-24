@@ -43,58 +43,70 @@ Use this skill when:
 
 ## Usage
 
-The skill uses the Python script located at `.claude/skills/xai-grok/scripts/grok.py`:
+The skill uses a modern Typer-based CLI at `.claude/skills/xai-grok/scripts/grok.py`:
 
 ### Basic Usage (X Search + Web Search enabled by default)
 
 ```bash
-source .venv/bin/activate && python .claude/skills/xai-grok/scripts/grok.py "Find recent tweets from Israeli tech nano-influencers"
+python3 grok.py "Find recent tweets from Israeli tech nano-influencers"
 ```
 
 ### With All Tools Including Code Execution
 
 ```bash
-source .venv/bin/activate && python .claude/skills/xai-grok/scripts/grok.py "Analyze tech trends with charts" --enable-code-execution
+python3 grok.py "Analyze tech trends with charts" --enable-code-execution
+```
+
+### Get Help
+
+```bash
+python grok.py --help
 ```
 
 ### Twitter/X Search Examples
 
 ```bash
 # Find specific users
-python .claude/skills/xai-grok/scripts/grok.py "Who are the top Israeli tech influencers on X?"
+python3 grok.py "Who are the top Israeli tech influencers on X?"
 
 # Search for recent tweets
-python .claude/skills/xai-grok/scripts/grok.py "Latest tweets about Israeli startups"
+python3 grok.py "Latest tweets about Israeli startups"
 
 # Analyze trends
-python .claude/skills/xai-grok/scripts/grok.py "What are Israeli tech companies tweeting about today?"
+python3 grok.py "What are Israeli tech companies tweeting about today?"
+
+# Use fast model with custom temperature (short options)
+python3 grok.py "Recent AI tweets" -m grok-4-fast-reasoning -t 0.5
 ```
 
 ### Disable Specific Tools
 
 ```bash
 # Only X search, no web search
-python .claude/skills/xai-grok/scripts/grok.py "Find tweets" --disable-web-search
+python3 grok.py "Find tweets" --disable-web-search
 
 # Only web search, no X search
-python .claude/skills/xai-grok/scripts/grok.py "Latest news" --disable-x-search
+python3 grok.py "Latest news" --disable-x-search
 
 # No tools (basic chat)
-python .claude/skills/xai-grok/scripts/grok.py "Explain AI" --disable-all-tools
+python3 grok.py "Explain AI" --disable-all-tools
 ```
 
 ### Available Options
 
 ```bash
---model grok-4                   # Model selection (default: grok-4)
---disable-x-search               # Disable X (Twitter) search (enabled by default)
---disable-web-search             # Disable web search (enabled by default)
---enable-code-execution          # Enable Python code execution (opt-in)
---disable-all-tools              # Disable all tools (basic chat mode)
---show-citations                 # Show source URLs (default: enabled)
---show-usage                     # Show token usage statistics
---show-tool-calls                # Show real-time tool calls
---temperature                    # Temperature for response generation (default: 0.7)
+--model, -m              # Model selection (default: grok-4)
+--temperature, -t        # Temperature for response generation (default: 0.3)
+--disable-x-search       # Disable X (Twitter) search (enabled by default)
+--disable-web-search     # Disable web search (enabled by default)
+--enable-code-execution  # Enable Python code execution (opt-in)
+--disable-all-tools      # Disable all tools (basic chat mode)
+--show-citations         # Show source URLs (default: enabled)
+--no-show-citations      # Hide source URLs
+--show-usage             # Show token usage statistics
+--show-tool-calls        # Show real-time tool calls
+--install-completion     # Install shell completion for the current shell
+--show-completion        # Show completion script for customization
 ```
 
 ### Available Grok 4 Models
@@ -106,8 +118,10 @@ python .claude/skills/xai-grok/scripts/grok.py "Explain AI" --disable-all-tools
 ## Requirements
 
 - Python virtual environment (`.venv`)
-- `xai-sdk==1.3.1`
-- `python-dotenv==1.1.1`
+- `xai-sdk>=1.3.1`
+- `python-dotenv>=1.1.1`
+- `typer` - Modern CLI framework
+- `typing_extensions` - For Annotated type hints
 - XAI_API_KEY environment variable in project's .env file
 
 ## How It Works
@@ -133,9 +147,12 @@ The script provides:
 - **Citations** - URLs of all sources Grok used
 - **Tool call visibility** - See which tools Grok invoked (optional)
 - **Token usage** - Detailed cost tracking (optional)
+- **Professional CLI** - Rich formatted help text with boxed sections
+- **Shell completion** - Tab completion support for all commands and options
 
 ## Notes
 
+- **Typer-powered CLI** provides a modern, user-friendly interface with rich formatting
 - Grok responses are clearly indicated in output
 - X search provides **real-time data** from the Twitter/X platform
 - Citations show full traceability of information sources

@@ -17,77 +17,93 @@ Features:
 
 import os
 import sys
-import argparse
+import typer
 from dotenv import load_dotenv
+from typing_extensions import Annotated
 
-try:
-    from xai_sdk import Client
-    from xai_sdk.chat import user
-    from xai_sdk.tools import web_search, x_search, code_execution
-except ImportError:
-    print("Error: xai-sdk package not found.", file=sys.stderr)
-    print("Please install it with: pip install xai-sdk>=1.3.1", file=sys.stderr)
-    sys.exit(1)
+from xai_sdk import Client
+from xai_sdk.chat import user
+from xai_sdk.tools import web_search, x_search, code_execution
+
+# Initialize Typer app
+app = typer.Typer(
+    help="xAI Grok API integration with agentic tool calling for Claude Code skills.",
+    epilog="""
+        Available Grok 4 Models:
+          grok-4                    Highest quality (256k context) [DEFAULT]
+          grok-4-fast-reasoning     Cost-efficient reasoning (2M context)
+          grok-4-fast-non-reasoning Cost-efficient non-reasoning (2M context)
+    
+        Examples:
+          # Search X/Twitter for Israeli tech influencers (default: streaming with X + web search)
+          python grok.py "Find recent tweets from Israeli tech nano-influencers"
+    
+          # Use all tools including code execution
+          python grok.py "Analyze tech trends" --enable-code-execution
+    
+          # Basic chat without tools
+          python grok.py "What is AI?" --disable-all-tools
+    """,
+    rich_markup_mode="rich"
+)
 
 
-def main():
-    # Parse command-line arguments
-    parser = argparse.ArgumentParser(
-        description='Query xAI Grok 4 model with agentic tool calling',
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-            Available Grok 4 Models:
-                grok-4                    Highest quality (256k context) [DEFAULT]
-                grok-4-fast-reasoning     Cost-efficient reasoning (2M context)
-                grok-4-fast-non-reasoning Cost-efficient non-reasoning (2M context)
-            
-            Tools (X search and web search enabled by default):
-                --disable-x-search        Disable X (Twitter) search
-                --disable-web-search      Disable web search
-                --enable-code-execution   Enable Python code execution (opt-in)
-                --disable-all-tools       Disable all tools (basic chat mode)
-            
-            Examples:
-                # Search X/Twitter for Israeli tech influencers (default: streaming with X + web search)
-                python grok.py "Find recent tweets from Israeli tech nano-influencers"
-            
-                # Use all tools including code execution
-                python grok.py "Analyze tech trends" --enable-code-execution
-            
-                # Basic chat without tools
-                python grok.py "What is AI?" --disable-all-tools
-        """
-    )
-    parser.add_argument('query', type=str, help='The query to send to Grok')
-    parser.add_argument('--model', type=str, default='grok-4',
-                        help='Grok model to use (default: grok-4)')
-    parser.add_argument('--temperature', type=float, default=0.3,
-                        help='Temperature for response generation (default: 0.3)')
-    parser.add_argument('--disable-x-search', action='store_true',
-                        help='Disable X (Twitter) search (enabled by default)')
-    parser.add_argument('--disable-web-search', action='store_true',
-                        help='Disable web search (enabled by default)')
-    parser.add_argument('--enable-code-execution', action='store_true',
-                        help='Enable Python code execution (disabled by default)')
-    parser.add_argument('--disable-all-tools', action='store_true',
-                        help='Disable all tools (basic chat mode)')
-    parser.add_argument('--show-citations', action='store_true', default=True,
-                        help='Show citations in output (default: enabled)')
-    parser.add_argument('--show-usage', action='store_true',
-                        help='Show detailed token usage and tool call statistics')
-    parser.add_argument('--show-tool-calls', action='store_true',
-                        help='Show all tool calls made during the request')
+@app.command()
+def main(
+    query: Annotated[str, typer.Argument(help="The query to send to Grok")],
+    model: Annotated[str, typer.Option(
+        "--model", "-m",
+        help="Grok model to use"
+    )] = "grok-4",
+    temperature: Annotated[float, typer.Option(
+        "--temperature", "-t",
+        help="Temperature for response generation"
+    )] = 0.3,
+    disable_x_search: Annotated[bool, typer.Option(
+        "--disable-x-search",
+        help="Disable X (Twitter) search (enabled by default)"
+    )] = False,
+    disable_web_search: Annotated[bool, typer.Option(
+        "--disable-web-search",
+        help="Disable web search (enabled by default)"
+    )] = False,
+    enable_code_execution: Annotated[bool, typer.Option(
+        "--enable-code-execution",
+        help="Enable Python code execution (disabled by default)"
+    )] = False,
+    disable_all_tools: Annotated[bool, typer.Option(
+        "--disable-all-tools",
+        help="Disable all tools (basic chat mode)"
+    )] = False,
+    show_citations: Annotated[bool, typer.Option(
+        "--show-citations/--no-show-citations",
+        help="Show citations in output"
+    )] = True,
+    show_usage: Annotated[bool, typer.Option(
+        "--show-usage",
+        help="Show detailed token usage and tool call statistics"
+    )] = False,
+    show_tool_calls: Annotated[bool, typer.Option(
+        "--show-tool-calls",
+        help="Show all tool calls made during the request"
+    )] = False,
+):
+    """
+    Query xAI Grok 4 model with agentic tool calling.
 
-    args = parser.parse_args()
-
+    Tools (X search and web search enabled by default):
+      - X (Twitter) search for real-time social media data
+      - Web search for current information
+      - Code execution (opt-in) for calculations and analysis
+    """
     # Load environment variables
     load_dotenv()
     api_key = os.getenv("XAI_API_KEY")
 
     if not api_key:
-        print("Error: XAI_API_KEY not found in environment variables.", file=sys.stderr)
-        print("Please set XAI_API_KEY in your .env file.", file=sys.stderr)
-        sys.exit(1)
+        typer.echo("Error: XAI_API_KEY not found in environment variables.", err=True)
+        typer.echo("Please set XAI_API_KEY in your .env file.", err=True)
+        raise typer.Exit(code=1)
 
     try:
         # Initialize xAI client
@@ -96,79 +112,79 @@ def main():
         # Configure tools based on arguments (streaming mode always used per xAI recommendations)
         # X search and web search are enabled by default, code execution is opt-in
         tools = []
-        if not args.disable_all_tools:
-            if not args.disable_web_search:
+        if not disable_all_tools:
+            if not disable_web_search:
                 tools.append(web_search())
-            if not args.disable_x_search:
+            if not disable_x_search:
                 tools.append(x_search())
-            if args.enable_code_execution:
+            if enable_code_execution:
                 tools.append(code_execution())
 
         # Create chat with configured tools
         chat = client.chat.create(
-            model=args.model,
+            model=model,
+            temperature=temperature,
             tools=tools if tools else None,
         )
 
         # Append user query
-        chat.append(user(args.query))
+        chat.append(user(query))
 
         # Process response with streaming (strongly recommended by xAI for agentic workflows)
         if not tools:
             # Basic chat mode without tools (synchronous)
             response = chat.sample()
-            print(response.content)
+            typer.echo(response.content)
         else:
             # Streaming mode with real-time tool call visibility (recommended for agentic workflows)
             is_thinking = True
             for response, chunk in chat.stream():
                 # Show tool calls as they happen
-                if args.show_tool_calls:
+                if show_tool_calls:
                     for tool_call in chunk.tool_calls:
-                        print(f"\n[Tool Call] {tool_call.function.name}: {tool_call.function.arguments}",
-                              file=sys.stderr)
+                        typer.echo(f"\n[Tool Call] {tool_call.function.name}: {tool_call.function.arguments}", err=True)
 
                 # Show thinking progress
                 if response.usage.reasoning_tokens and is_thinking:
-                    print(f"\r[Thinking... {response.usage.reasoning_tokens} tokens]",
-                          end="", flush=True, file=sys.stderr)
+                    typer.echo(f"\r[Thinking... {response.usage.reasoning_tokens} tokens]",
+                              nl=False, err=True)
 
                 # Print the final response content
                 if chunk.content and is_thinking:
-                    print("\n", file=sys.stderr)  # Clear the thinking line
+                    typer.echo("\n", nl=False, err=True)  # Clear the thinking line
                     is_thinking = False
 
                 if chunk.content and not is_thinking:
-                    print(chunk.content, end="", flush=True)
+                    typer.echo(chunk.content, nl=False)
 
             # Print newline after streaming
-            print()
+            typer.echo()
 
             # Show citations
-            if args.show_citations and response.citations:
-                print("\n\n=== Citations ===")
+            if show_citations and response.citations:
+                typer.echo("\n\n=== Citations ===")
                 for citation in response.citations:
-                    print(f"  - {citation}")
+                    typer.echo(f"  - {citation}")
 
             # Show usage statistics
-            if args.show_usage:
-                print("\n\n=== Usage Statistics ===")
-                print(f"Completion tokens: {response.usage.completion_tokens}")
-                print(f"Prompt tokens: {response.usage.prompt_tokens}")
-                print(f"Reasoning tokens: {response.usage.reasoning_tokens}")
-                print(f"Total tokens: {response.usage.total_tokens}")
+            if show_usage:
+                typer.echo("\n\n=== Usage Statistics ===")
+                typer.echo(f"Completion tokens: {response.usage.completion_tokens}")
+                typer.echo(f"Prompt tokens: {response.usage.prompt_tokens}")
+                typer.echo(f"Reasoning tokens: {response.usage.reasoning_tokens}")
+                typer.echo(f"Total tokens: {response.usage.total_tokens}")
                 if response.server_side_tool_usage:
-                    print(f"\nTool usage: {response.server_side_tool_usage}")
-                    print(f"\nTool calls summary:")
+                    typer.echo(f"\nTool usage: {response.server_side_tool_usage}")
+                    typer.echo(f"\nTool calls summary:")
                     for tool_call in response.tool_calls:
-                        print(f"  {tool_call.function.name}: {tool_call.function.arguments}")
+                        typer.echo(f"  {tool_call.function.name}: {tool_call.function.arguments}")
 
     except Exception as e:
-        print(f"Error querying Grok: {str(e)}", file=sys.stderr)
+        typer.echo(f"Error querying Grok: {str(e)}", err=True)
         import traceback
         traceback.print_exc(file=sys.stderr)
-        sys.exit(1)
+        raise typer.Exit(code=1)
 
 
 if __name__ == "__main__":
-    main()
+    app()

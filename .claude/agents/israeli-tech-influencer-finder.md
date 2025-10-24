@@ -1,6 +1,36 @@
 ---
 name: israeli-tech-influencer-finder
-description: Use this agent when the user wants to discover and track Israeli tech nano-influencers on Twitter/X for engagement purposes. Specifically invoke this agent when:\n\n<example>\nContext: User wants to grow their Twitter presence in the Israeli tech ecosystem.\nuser: "Can you help me find some Israeli tech nano-influencers to engage with?"\nassistant: "I'll use the israeli-tech-influencer-finder agent to search for relevant profiles and build your tracking document."\n<commentary>\nThe user is explicitly requesting influencer discovery in the Israeli tech space, which matches the agent's core purpose.\n</commentary>\n</example>\n\n<example>\nContext: User is actively working on their Twitter growth strategy.\nuser: "I want to expand my network in the Israeli startup scene"\nassistant: "Let me activate the israeli-tech-influencer-finder agent to identify nano-influencers in the Israeli tech ecosystem that would be valuable connections."\n<commentary>\nThe request aligns with finding Israeli tech influencers for networking and engagement purposes.\n</commentary>\n</example>\n\n<example>\nContext: User mentions wanting to engage with Hebrew-speaking tech professionals.\nuser: "Who are some good Hebrew-speaking tech people on Twitter I should follow?"\nassistant: "I'll use the israeli-tech-influencer-finder agent to search for nano-influencers in the Israeli tech community who tweet in Hebrew."\n<commentary>\nThe combination of Hebrew language, tech focus, and engagement intent triggers this agent.\n</commentary>\n</example>\n\nAlso use this agent proactively when the user discusses Twitter/X growth strategies focused on the Israeli market, mentions wanting to increase engagement in Hebrew tech communities, or asks about expanding their presence in Israeli startup circles.
+description: |
+  Use this agent when the user wants to discover and track Israeli tech nano-influencers on Twitter/X for engagement purposes. Specifically invoke this agent when:
+
+  <example>
+  Context: User wants to grow their Twitter presence in the Israeli tech ecosystem.
+  user: "Can you help me find some Israeli tech nano-influencers to engage with?"
+  assistant: "I'll use the israeli-tech-influencer-finder agent to search for relevant profiles and build your tracking document."
+  <commentary>
+  The user is explicitly requesting influencer discovery in the Israeli tech space, which matches the agent's core purpose.
+  </commentary>
+  </example>
+
+  <example>
+  Context: User is actively working on their Twitter growth strategy.
+  user: "I want to expand my network in the Israeli startup scene"
+  assistant: "Let me activate the israeli-tech-influencer-finder agent to identify nano-influencers in the Israeli tech ecosystem that would be valuable connections."
+  <commentary>
+  The request aligns with finding Israeli tech influencers for networking and engagement purposes.
+  </commentary>
+  </example>
+
+  <example>
+  Context: User mentions wanting to engage with Hebrew-speaking tech professionals.
+  user: "Who are some good Hebrew-speaking tech people on Twitter I should follow?"
+  assistant: "I'll use the israeli-tech-influencer-finder agent to search for nano-influencers in the Israeli tech community who tweet in Hebrew."
+  <commentary>
+  The combination of Hebrew language, tech focus, and engagement intent triggers this agent.
+  </commentary>
+  </example>
+
+  Also use this agent proactively when the user discusses Twitter/X growth strategies focused on the Israeli market, mentions wanting to increase engagement in Hebrew tech communities, or asks about expanding their presence in Israeli startup circles.
 model: inherit
 color: blue
 ---
