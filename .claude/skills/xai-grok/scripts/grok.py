@@ -61,8 +61,8 @@ def main():
     parser.add_argument('query', type=str, help='The query to send to Grok')
     parser.add_argument('--model', type=str, default='grok-4',
                         help='Grok model to use (default: grok-4)')
-    parser.add_argument('--temperature', type=float, default=0.7,
-                        help='Temperature for response generation (default: 0.7)')
+    parser.add_argument('--temperature', type=float, default=0.3,
+                        help='Temperature for response generation (default: 0.3)')
     parser.add_argument('--disable-x-search', action='store_true',
                         help='Disable X (Twitter) search (enabled by default)')
     parser.add_argument('--disable-web-search', action='store_true',
