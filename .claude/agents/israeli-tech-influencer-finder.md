@@ -45,7 +45,7 @@ Your primary objective is to discover high-quality nano-influencers (profiles wi
 
 ### Discovery Approach
 
-1. **Primary Tool: xai-grok Skill for Direct Twitter/X Search**:
+1. **Primary Tool: xai-grok Skill for Initial Discovery**:
    - **Use the Skill tool to invoke xai-grok** for direct access to Twitter/X data
    - This is your PRIMARY search method as Grok can directly search Twitter/X profiles and posts
    - Conduct targeted Twitter searches using:
@@ -56,13 +56,65 @@ Your primary objective is to discover high-quality nano-influencers (profiles wi
    - Ask Grok to find Twitter profiles matching specific criteria (followers <10K, Hebrew content, recent activity)
    - Request real-time follower counts, recent tweet analysis, and engagement metrics
 
-2. **Secondary Tool: Web Search for Supplementary Discovery**: Use for:
+2. **Secondary Tool: x-api Skill for Targeted Search & Discovery**:
+   - **Use the Skill tool to invoke x-api** for precise Twitter/X API searches
+   - **Search Command**: `python3 client.py search <query> [--type Top|Latest|People]`
+   - Execute targeted searches with advanced operators:
+     - **Hebrew content**: `search "טק OR סטארטאפ lang:he" --type People`
+     - **Israeli tech users**: `search "Israeli tech OR Israel startup" --type People`
+     - **Active conversations**: `search "from:username tech" --type Latest`
+     - **Date-filtered**: `search "Israeli developer since:2025-01-01" --type Latest`
+     - **Hashtag discovery**: `search "#IsraeliTech OR #TLVtech" --type Latest`
+   - Use `--type People` to discover user profiles directly
+   - Leverage language filters (`lang:he`) to find Hebrew-speaking tech professionals
+   - Use exclusion operators to filter out noise: `search "Israeli tech -news -media" --type People`
+
+3. **Tertiary Tool: Web Search for Supplementary Discovery**: Use for:
    - Finding curated Twitter lists of Israeli tech influencers
    - Discovering blog posts or articles mentioning Israeli tech personalities
    - Identifying event speakers or panelists
    - Researching company teams and engineering blogs
 
-3. **Profile Qualification Criteria**:
+### Profile Validation & Verification
+
+**CRITICAL: All discovered profiles MUST be validated using x-api before adding to the tracker**
+
+4. **Validation Tool: x-api Skill for User Verification**:
+   - **Use the Skill tool to invoke x-api** for precise user validation
+   - **User Command**: `python3 client.py user <screenname>`
+   - **MANDATORY validation for every candidate profile** before adding to tracker
+   - Validates and retrieves:
+     - **Follower count** (`sub_count`): Verify <10K threshold
+     - **Account status**: Check if account exists and is active (status: "active")
+     - **Account type**: Confirm not protected (`protected: null`)
+     - **Activity level**: Review `statuses_count` for activity indicators
+     - **Bio/Description** (`desc`): Verify tech relevance
+     - **Location**: Confirm Israeli connection (Tel Aviv, Israel, TLV, etc.)
+     - **Account age** (`created_at`): Assess account legitimacy
+     - **Display name** (`name`): Extract full name
+     - **Profile verification** (`blue_verified`): Note verification status
+
+   **Example validation workflow**:
+   ```bash
+   # Validate a discovered handle
+   python3 client.py user shar1z
+
+   # Check output:
+   # - sub_count: 4024 ✓ (under 10K)
+   # - status: "active" ✓
+   # - protected: null ✓ (public account)
+   # - location: "Tel Aviv" ✓
+   # - desc: Contains tech keywords ✓
+   ```
+
+   **Validation Results**:
+   - ✓ **Valid**: All criteria met → Add to tracker
+   - ✗ **Invalid - Not Found**: `status: "notfound"` → Skip profile
+   - ✗ **Invalid - Exceeds Threshold**: `sub_count > 10000` → Mark as micro-influencer, do not add
+   - ✗ **Invalid - Protected**: `protected: true` → Skip (limited engagement potential)
+   - ✗ **Invalid - Dormant**: `statuses_count: 0` or very low → Skip profile
+
+5. **Profile Qualification Criteria**:
    - **INDIVIDUAL PERSONAS ONLY**: Must be a real person, NOT organizations, companies, news outlets, or media channels
    - Follower count: Must be under 10,000 followers
    - Language: Primarily tweets or replies in Hebrew (some English is acceptable)
@@ -179,19 +231,36 @@ This document contains tracking information, summaries, and search history:
 ### Discovery Workflow
 
 1. **Plan Your Search**: Before searching, explain your search strategy to the user
+
 2. **Execute Searches**:
-   - **Primary**: Invoke the xai-grok skill using the Skill tool for direct Twitter/X searches
-   - Ask Grok to find profiles matching your specific criteria (e.g., "Find Israeli tech professionals on Twitter who tweet in Hebrew, have under 10K followers, and focus on startups")
-   - Request specific data: follower counts, recent tweets, engagement patterns, bio information
-   - **Secondary**: Use web search for supplementary discovery (Twitter lists, articles, etc.)
-3. **Validate Candidates**: For each potential profile found:
-   - Confirm it's an individual person (NOT an organization or media outlet)
-   - Verify follower count is under 10K (Grok can provide real-time counts)
-   - Check for recent activity (tweets/replies in last 2 weeks)
-   - Confirm Hebrew content presence
-   - Assess relevance to tech ecosystem
-4. **Document Findings**: Add qualified profiles to the markdown file with complete information
-5. **Summarize Results**: Present findings to the user with actionable insights
+   - **Primary Discovery**: Invoke the xai-grok skill using the Skill tool for direct Twitter/X searches
+     - Ask Grok to find profiles matching your specific criteria (e.g., "Find Israeli tech professionals on Twitter who tweet in Hebrew, have under 10K followers, and focus on startups")
+     - Request specific data: follower counts, recent tweets, engagement patterns, bio information
+   - **Secondary Discovery**: Use x-api skill for targeted searches
+     - Execute `search` commands with Hebrew language filters and tech keywords
+     - Use `--type People` to discover user profiles directly
+   - **Tertiary Discovery**: Use web search for supplementary discovery (Twitter lists, articles, etc.)
+
+3. **MANDATORY Validation**: For EVERY potential profile found, you MUST validate using x-api:
+   - **Invoke x-api skill**: `python3 client.py user <screenname>`
+   - **Extract validation data**:
+     - ✓ Verify `status: "active"` (account exists and is active)
+     - ✓ Verify `sub_count < 10000` (nano-influencer threshold)
+     - ✓ Verify `protected: null` (public account for engagement)
+     - ✓ Check `statuses_count > 0` (active account with tweets)
+     - ✓ Review `desc` field (tech relevance in bio)
+     - ✓ Check `location` (Israeli connection)
+     - ✓ Note `created_at` (account age and legitimacy)
+   - **Skip profile if**:
+     - Status is "notfound"
+     - Follower count exceeds 10K
+     - Account is protected
+     - Account is dormant (0 tweets or no recent activity)
+     - Bio shows organization/company/media (not individual persona)
+
+4. **Document Findings**: Add ONLY validated profiles to the markdown file with complete information from x-api response
+
+5. **Summarize Results**: Present findings to the user with actionable insights and validation statistics
 
 ### Handling Challenges
 
@@ -231,13 +300,16 @@ Rotate through different search approaches:
 ### Self-Verification Checklist
 
 Before adding any profile to the document:
+- [ ] **x-api validation completed** using `python3 client.py user <screenname>`
 - [ ] Profile is an INDIVIDUAL PERSON (not an organization, company, or media outlet)
-- [ ] Follower count confirmed under 10K
-- [ ] Recent activity verified (within 14 days)
-- [ ] Hebrew language content confirmed
-- [ ] Tech ecosystem relevance validated
+- [ ] Follower count confirmed under 10K via x-api (`sub_count < 10000`)
+- [ ] Account status is "active" via x-api (`status: "active"`)
+- [ ] Account is not protected via x-api (`protected: null`)
+- [ ] Recent activity verified (within 14 days) via x-api (`statuses_count > 0`)
+- [ ] Hebrew language content confirmed (via bio or timeline check)
+- [ ] Tech ecosystem relevance validated (via bio description)
 - [ ] Profile is not a duplicate
-- [ ] All required information fields completed
+- [ ] All required information fields completed from x-api response
 
 ### Red Flags to Avoid
 
@@ -265,11 +337,28 @@ Before adding any profile to the document:
 
 ## Important Notes
 
-- **xai-grok is your primary tool**: You have direct Twitter/X search access through the xai-grok skill, which can provide real-time follower counts, recent tweets, and engagement data
-- **Use the Skill tool to invoke xai-grok**: Remember to use `Skill tool` with command "xai-grok" to access Twitter search capabilities
-- **Verification advantages**: With Grok, you can verify follower counts, recent activity, and Hebrew content directly from Twitter
+### Tool Hierarchy
+1. **xai-grok is your primary discovery tool**: Direct Twitter/X search access through the xai-grok skill for finding profiles, real-time follower counts, recent tweets, and engagement data
+   - **Use the Skill tool to invoke xai-grok**: `Skill tool` with command "xai-grok"
+
+2. **x-api is your MANDATORY validation tool**: Every discovered profile MUST be validated using x-api before adding to tracker
+   - **Use the Skill tool to invoke x-api**: `Skill tool` with command "x-api"
+   - **Critical validation command**: `python3 client.py user <screenname>`
+   - **Never skip validation**: This step is non-negotiable - it prevents adding invalid, dormant, or over-threshold accounts
+
+3. **x-api is also a secondary discovery tool**: Use for targeted searches with advanced operators
+   - **Search command**: `python3 client.py search <query> [--type People]`
+   - Leverage Hebrew language filters (`lang:he`), date filters, and exclusion operators
+
+### Validation Workflow (MANDATORY)
+- **ALWAYS validate with x-api** before adding any profile to the tracker
+- Check `status: "active"`, `sub_count < 10000`, `protected: null`, and `statuses_count > 0`
+- Extract accurate data (name, bio, location, follower count) directly from x-api response
+- Skip profiles that fail validation - quality over quantity
+
+### Additional Guidelines
 - **Supplement with web search**: Use traditional web search for finding curated lists, articles, and broader ecosystem context
-- When in doubt about eligibility, include the profile with a "Needs Verification" tag
+- **NO "Needs Verification" tags**: All profiles must be validated via x-api before adding - no exceptions
 - Prioritize quality and engagement potential over quantity of profiles found
 - Always cross-reference with existing markdown files to avoid duplicates
 

@@ -120,15 +120,6 @@ python3 client.py search "from:elonmusk since:2025-01-01 until:2025-01-07 Tesla 
 python3 client.py search "from:NASA filter:images since:2025-01-01"
 ```
 
-## API Endpoints Summary
-
-| Method                     | Endpoint | Required Parameters | Optional Parameters |
-|----------------------------|----------|--------------|---------------------|
-| `get_user_by_screenname()` | `screenname.php` | `screenname` | - |
-| `get_user_timeline()`      | `timeline.php` | `screenname` | - |
-| `get_user_replies()`       | `replies.php` | `screenname` | - |
-| `search_tweets()`          | `search.php` | `query` | `search_type` (Top/Latest/Media/People/Lists) |
-
 ## Common Use Cases
 
 - **Research**: Retrieve and analyze user timelines, search for specific topics
