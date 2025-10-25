@@ -24,7 +24,7 @@ python3 client.py user elonmusk
 
 ### 2. Get User Timeline
 
-Retrieve a user's timeline (tweets) by screen name.
+Retrieve a user's timeline (tweets) by screen name. Returns a structured response with user information and the date of the most recent tweet.
 
 ```bash
 python3 client.py timeline <screenname>
@@ -32,6 +32,47 @@ python3 client.py timeline <screenname>
 # Example:
 python3 client.py timeline elonmusk
 ```
+
+**Response Format:**
+
+The timeline command returns a `UserTimelineResponse` Pydantic model with the following structure:
+
+```json
+{
+  "status": "active",
+  "profile": "username",
+  "rest_id": "123456789",
+  "blue_verified": true,
+  "verification_type": null,
+  "affiliates": [],
+  "business_account": [],
+  "avatar": "https://...",
+  "header_image": "https://...",
+  "desc": "User bio description",
+  "name": "Display Name",
+  "website": "example.com",
+  "protected": null,
+  "location": "Location",
+  "following": 100,
+  "followers": 1000,
+  "statuses_count": 5000,
+  "media_count": 50,
+  "created_at": "Mon Jan 01 00:00:00 +0000 2020",
+  "pinned_tweet_ids_str": [],
+  "id": "123456789",
+  "last_tweet_date": "Thu Oct 23 16:30:00 +0000 2025",
+  "last_reply_date": "Fri Oct 24 09:55:51 +0000 2025",
+  "is_hebrew_writer": false
+}
+```
+
+**Calculated Fields:**
+
+- `last_tweet_date`: The `created_at` timestamp of the user's most recent original tweet (where `tweet_id == conversation_id`), or `null` if no tweets are available.
+
+- `last_reply_date`: The `created_at` timestamp of the user's most recent reply (where `tweet_id != conversation_id`), or `null` if no replies are available.
+
+- `is_hebrew_writer`: Boolean flag indicating whether the user has posted any content in Hebrew (`lang == "he"`) in their timeline.
 
 ### 3. Get User's Replies
 

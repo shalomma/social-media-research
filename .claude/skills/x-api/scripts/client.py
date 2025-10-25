@@ -8,9 +8,34 @@ import os
 import json
 import typer
 import requests
+from typing import Optional
+from pydantic import BaseModel
 from dotenv import load_dotenv
 
 load_dotenv()
+
+
+class UserTimelineResponse(BaseModel):
+    """Response model for user timeline with calculated fields."""
+    status: str
+    profile: str
+    blue_verified: bool
+    verification_type: Optional[str] = None
+    affiliates: list
+    business_account: list
+    desc: str
+    name: str
+    website: Optional[str] = None
+    protected: Optional[bool] = None
+    location: Optional[str] = None
+    following: int
+    followers: int
+    statuses_count: int
+    media_count: int
+    created_at: str
+    last_tweet_date: Optional[str] = None
+    last_reply_date: Optional[str] = None
+    is_hebrew_writer: bool = False
 
 
 class TwitterAPIClient:
@@ -59,26 +84,7 @@ class TwitterAPIClient:
 
         return response.json()
 
-    def get_user_by_screenname(self, screenname: str) -> dict:
-        """
-        Retrieve Twitter user information by screen name and rest_id.
-
-        Args:
-            screenname: Twitter username (without @)
-
-        Returns:
-            dict: User data from the API
-
-        Raises:
-            requests.exceptions.RequestException: If API request fails
-        """
-        params = {
-            "screenname": screenname,
-        }
-
-        return self._make_request("screenname.php", params)
-
-    def get_user_timeline(self, screenname: str) -> dict:
+    def get_user_timeline(self, screenname: str) -> UserTimelineResponse:
         """
         Retrieve a user's timeline (tweets) by screen name.
 
@@ -86,7 +92,7 @@ class TwitterAPIClient:
             screenname: Twitter username (without @)
 
         Returns:
-            dict: Timeline data from the API
+            UserTimelineResponse: User info with calculated fields
 
         Raises:
             requests.exceptions.RequestException: If API request fails
@@ -95,26 +101,61 @@ class TwitterAPIClient:
             "screenname": screenname
         }
 
-        return self._make_request("timeline.php", params)
+        response = self._make_request("timeline.php", params)
 
-    def get_user_replies(self, screenname: str) -> dict:
-        """
-        Retrieve user replies.
+        # Extract user data
+        user_data = response["user"]
 
-        Args:
-            screenname: The ID of the tweet to get replies for
+        # Calculate fields from timeline
+        last_tweet_date = None
+        last_reply_date = None
+        is_hebrew_writer = False
 
-        Returns:
-            dict: Replies data from the API
+        timeline_list = response.get("timeline", [])
 
-        Raises:
-            requests.exceptions.RequestException: If API request fails
-        """
-        params = {
-            "screenname": screenname
-        }
+        for item in timeline_list:
+            tweet_id = item.get("tweet_id")
+            conversation_id = item.get("conversation_id")
+            created_at = item.get("created_at")
+            lang = item.get("lang")
 
-        return self._make_request("replies.php", params)
+            # Check for Hebrew content
+            if lang == "he":
+                is_hebrew_writer = True
+
+            # Distinguish between tweets and replies
+            if tweet_id == conversation_id:
+                # This is an original tweet
+                if last_tweet_date is None:
+                    last_tweet_date = created_at
+            else:
+                # This is a reply
+                if last_reply_date is None:
+                    last_reply_date = created_at
+
+        # Create and return Pydantic model
+        # Map API field names to our model field names
+        return UserTimelineResponse(
+            status=user_data["status"],
+            profile=user_data["profile"],
+            blue_verified=user_data["blue_verified"],
+            verification_type=user_data.get("verification_type"),
+            affiliates=user_data["affiliates"],
+            business_account=user_data["business_account"],
+            desc=user_data["desc"],
+            name=user_data["name"],
+            website=user_data.get("website"),
+            protected=user_data.get("protected"),
+            location=user_data.get("location"),
+            following=user_data["friends"],
+            followers=user_data["sub_count"],
+            statuses_count=user_data["statuses_count"],
+            media_count=user_data["media_count"],
+            created_at=user_data["created_at"],
+            last_tweet_date=last_tweet_date,
+            last_reply_date=last_reply_date,
+            is_hebrew_writer=is_hebrew_writer
+        )
 
     def search_tweets(self, query: str, search_type: str = "Top") -> dict:
         """
@@ -143,28 +184,6 @@ app = typer.Typer(help="Twitter API client for RapidAPI endpoints")
 
 
 @app.command()
-def user(
-    screenname: str = typer.Argument(..., help="Twitter username (without @)"),
-):
-    """Get user information by screenname"""
-    try:
-        client = TwitterAPIClient()
-        result = client.get_user_by_screenname(screenname)
-        typer.echo(json.dumps(result, indent=2))
-    except ValueError as e:
-        typer.secho(f"Configuration Error: {e}", fg=typer.colors.RED, err=True)
-        raise typer.Exit(1)
-    except requests.exceptions.HTTPError as e:
-        typer.secho(f"API Error: {e}", fg=typer.colors.RED, err=True)
-        if e.response is not None:
-            typer.secho(f"Response: {e.response.text}", fg=typer.colors.RED, err=True)
-        raise typer.Exit(1)
-    except requests.exceptions.RequestException as e:
-        typer.secho(f"Request Error: {e}", fg=typer.colors.RED, err=True)
-        raise typer.Exit(1)
-
-
-@app.command()
 def timeline(
     screenname: str = typer.Argument(..., help="Twitter username (without @)")
 ):
@@ -172,7 +191,7 @@ def timeline(
     try:
         client = TwitterAPIClient()
         result = client.get_user_timeline(screenname)
-        typer.echo(json.dumps(result, indent=2))
+        typer.echo(json.dumps(result.model_dump(), indent=2))
     except ValueError as e:
         typer.secho(f"Configuration Error: {e}", fg=typer.colors.RED, err=True)
         raise typer.Exit(1)
@@ -212,27 +231,6 @@ def search(
         typer.secho(f"Request Error: {e}", fg=typer.colors.RED, err=True)
         raise typer.Exit(1)
 
-
-@app.command()
-def replies(
-    screenname: str = typer.Argument(..., help="username to get replies for")
-):
-    """Get replies to a specific tweet"""
-    try:
-        client = TwitterAPIClient()
-        result = client.get_user_replies(screenname)
-        typer.echo(json.dumps(result, indent=2))
-    except ValueError as e:
-        typer.secho(f"Configuration Error: {e}", fg=typer.colors.RED, err=True)
-        raise typer.Exit(1)
-    except requests.exceptions.HTTPError as e:
-        typer.secho(f"API Error: {e}", fg=typer.colors.RED, err=True)
-        if e.response is not None:
-            typer.secho(f"Response: {e.response.text}", fg=typer.colors.RED, err=True)
-        raise typer.Exit(1)
-    except requests.exceptions.RequestException as e:
-        typer.secho(f"Request Error: {e}", fg=typer.colors.RED, err=True)
-        raise typer.Exit(1)
 
 
 if __name__ == "__main__":
