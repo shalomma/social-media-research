@@ -87,7 +87,7 @@ python3 client.py replies elonmusk
 
 ### 4. Search Tweets
 
-Search for tweets matching a query with optional search type filtering.
+Search for tweets matching a query with optional search type filtering. Returns a filtered response excluding `next_cursor`, and omitting `id` and `media` fields from each tweet.
 
 ```bash
 python3 client.py search <query> [--type Top|Latest|Media|People|Lists]
@@ -98,6 +98,32 @@ python3 client.py search SpaceX
 python3 client.py search "developers" --type People
 python3 client.py search "tech lists" --type Lists
 ```
+
+**Response Format:**
+
+The search command returns a `SearchResponse` Pydantic model with the following structure:
+
+```json
+{
+  "timeline": [
+    {
+      "type": "tweet",
+      "tweet_id": "1703108627035254988",
+      "screen_name": "fishcatut",
+      "bookmarks": 9,
+      "favorites": 241,
+      "created_at": "Sat Sep 16 18:08:33 +0000 2023",
+      "text": "What's going on here #cybertruck #tesla",
+      "lang": "en",
+      "quotes": 14,
+      "replies": 42,
+      "retweets": 19
+    }
+  ]
+}
+```
+
+**Note:** The response excludes `next_cursor`, `id`, and `media` fields for cleaner, more focused results.
 
 #### Advanced Search Operators
 

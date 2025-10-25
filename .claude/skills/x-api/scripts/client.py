@@ -38,6 +38,24 @@ class UserTimelineResponse(BaseModel):
     is_hebrew_writer: bool = False
 
 
+class SearchTweet(BaseModel):
+    """Individual tweet in search results (excludes id and media)."""
+    screen_name: str
+    bookmarks: int
+    favorites: int
+    created_at: str
+    text: str
+    lang: str
+    quotes: int
+    replies: int
+    retweets: int
+
+
+class SearchResponse(BaseModel):
+    """Response model for tweet search results."""
+    timeline: list[SearchTweet]
+
+
 class TwitterAPIClient:
     """Client for interacting with Twitter API via RapidAPI."""
 
@@ -157,7 +175,7 @@ class TwitterAPIClient:
             is_hebrew_writer=is_hebrew_writer
         )
 
-    def search_tweets(self, query: str, search_type: str = "Top") -> dict:
+    def search_tweets(self, query: str, search_type: str = "Top") -> SearchResponse:
         """
         Search for tweets matching a query.
 
@@ -166,7 +184,7 @@ class TwitterAPIClient:
             search_type: Type of search ("Top", "Latest", "Media", "People", or "Lists")
 
         Returns:
-            dict: Search results from the API
+            SearchResponse: Filtered search results (excludes next_cursor, id, and media)
 
         Raises:
             requests.exceptions.RequestException: If API request fails
@@ -176,7 +194,26 @@ class TwitterAPIClient:
             "search_type": search_type
         }
 
-        return self._make_request("search.php", params)
+        response = self._make_request("search.php", params)
+
+        # Extract and filter timeline tweets (exclude id and media fields)
+        timeline_data = response.get("timeline", [])
+        filtered_tweets = []
+
+        for tweet in timeline_data:
+            filtered_tweets.append(SearchTweet(
+                screen_name=tweet["screen_name"],
+                bookmarks=tweet["bookmarks"],
+                favorites=tweet["favorites"],
+                created_at=tweet["created_at"],
+                text=tweet["text"],
+                lang=tweet["lang"],
+                quotes=tweet["quotes"],
+                replies=tweet["replies"],
+                retweets=tweet["retweets"]
+            ))
+
+        return SearchResponse(timeline=filtered_tweets)
 
 
 # Create Typer app
@@ -218,7 +255,7 @@ def search(
     try:
         client = TwitterAPIClient()
         result = client.search_tweets(query, search_type)
-        typer.echo(json.dumps(result, indent=2))
+        typer.echo(json.dumps(result.model_dump(), indent=2))
     except ValueError as e:
         typer.secho(f"Configuration Error: {e}", fg=typer.colors.RED, err=True)
         raise typer.Exit(1)
