@@ -97,7 +97,7 @@ class TwitterAPIClient:
             lang = item.get("lang")
 
             # Check for Hebrew content
-            if lang == "he":
+            if lang == "iw":
                 is_hebrew_writer = True
 
             # Distinguish between tweets and replies
