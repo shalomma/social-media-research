@@ -14,6 +14,9 @@
 - **Profile URL**: https://twitter.com/shar1z
 - **Location**: Tel Aviv
 - **Language**: English and Hebrew
+- **Last Tweet Date**: Thu Oct 23 09:15:59 +0000 2025
+- **Last Reply Date**: Mon Oct 13 07:13:19 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 24, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Active since 2009, co-hosts @devadvocast podcast, runs #shar1zbookclub
@@ -30,6 +33,9 @@
 - **Profile URL**: https://twitter.com/TalKeinan
 - **Location**: TLV, ISR
 - **Language**: English
+- **Last Tweet Date**: Sun May 12 20:44:55 +0000 2024
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 24, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Active since 2007. Lower follower count than expected but solid nano-influencer profile for VC/startup ecosystem.
@@ -46,6 +52,9 @@
 - **Profile URL**: https://twitter.com/danielbmarkham
 - **Location**: East Coast, United States
 - **Language**: English
+- **Last Tweet Date**: Fri Oct 24 02:02:40 +0000 2025
+- **Last Reply Date**: Thu Oct 23 19:02:36 +0000 2025
+- **Hebrew Writer**: No
 - **Added**: October 24, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Active since 2009. NOT Israeli-based (US East Coast), but may have tech connections worth exploring. Blue verified account.
@@ -62,6 +71,9 @@
 - **Profile URL**: https://twitter.com/TomerDean
 - **Location**: Tel Aviv
 - **Language**: English and Hebrew
+- **Last Tweet Date**: Sun Oct 19 12:24:22 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 24, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Blue verified. Active since 2011. Strong entrepreneurship track record with early start. Based in Tel Aviv 🇮🇱🇺🇸
@@ -82,6 +94,9 @@
 - **Profile URL**: https://twitter.com/Gavriel_Cohen
 - **Location**: Tel Aviv, Israel
 - **Language**: English
+- **Last Tweet Date**: Fri Oct 03 16:31:47 +0000 2025
+- **Last Reply Date**: Sat Jun 21 14:39:12 +0000 2025
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: Blue verified. Ex-Wix developer with TAU physics + CS degree. Focuses on AI, Dev tools, Quantum computing startups
@@ -98,6 +113,9 @@
 - **Profile URL**: https://twitter.com/Israelzzzzzzz
 - **Location**: Not specified
 - **Language**: English
+- **Last Tweet Date**: Thu Jun 27 14:08:51 +0000 2024
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: Created Jan 2020, 2,205 following. High tweet volume indicates strong community engagement
@@ -114,6 +132,9 @@
 - **Profile URL**: https://twitter.com/oriSomething
 - **Location**: World emoji (🌍)
 - **Language**: Primarily Hebrew with English tech terms
+- **Last Tweet Date**: Sat Oct 25 20:11:37 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: Strong Hebrew language presence, technical humor, developer community insider. 195K favorites show high engagement
@@ -130,6 +151,9 @@
 - **Profile URL**: https://twitter.com/pythiccoder
 - **Location**: Not specified
 - **Language**: English
+- **Last Tweet Date**: Fri Mar 14 13:16:31 +0000 2025
+- **Last Reply Date**: Fri Mar 14 13:17:26 +0000 2025
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: Active since Aug 2014, Microsoft research role, Bar Ilan University alumni, ribbon emoji (🎗️) in name
@@ -148,6 +172,9 @@
 - **Profile URL**: https://twitter.com/inbarmor
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Fri Oct 10 15:34:06 +0000 2025
+- **Last Reply Date**: Wed Oct 01 12:57:40 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: "Life in pink | Life in Tech" - unique personal branding. Created Dec 2011, ex-Airbnb connections, 745 following. Strong focus on vegan tech community
@@ -164,6 +191,9 @@
 - **Profile URL**: https://twitter.com/nelntz
 - **Location**: Israel
 - **Language**: Primarily Hebrew
+- **Last Tweet Date**: Sat Oct 25 15:37:25 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: Blue verified. Bio: "חיפה במקור, תל אביב בהווה. מוביל פיתוח בסטארטאפ. אנחנו ננצח כי אנחנו טובים יותר, וכי אין לנו ברירה" (Haifa origin, Tel Aviv now. Lead dev in startup. We will win because we're better, and because we have no choice). 14,820 favorites shows high engagement
@@ -180,6 +210,9 @@
 - **Profile URL**: https://twitter.com/YaronTm
 - **Location**: Israel, Tel Aviv
 - **Language**: Hebrew
+- **Last Tweet Date**: Fri Oct 17 18:45:36 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: Emoji in bio: 🤟. 2,263 favorites, 355 following
@@ -198,6 +231,9 @@
 - **Profile URL**: https://twitter.com/KachlonKfir
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Sat Oct 25 20:01:33 +0000 2025
+- **Last Reply Date**: Fri Oct 24 19:39:44 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: 501 following, wife-approved opinions (as stated in bio), very active engagement
@@ -214,6 +250,9 @@
 - **Profile URL**: https://twitter.com/eyalbino
 - **Location**: Not specified (operates between NYC and TLV)
 - **Language**: English
+- **Last Tweet Date**: Mon Oct 20 01:43:31 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: "Living and breathing NYC-TLV tech." 1,909 following
@@ -232,6 +271,9 @@
 - **Profile URL**: https://twitter.com/lgla55
 - **Location**: Not specified (operates between UK and Tel Aviv)
 - **Language**: English
+- **Last Tweet Date**: Wed Dec 23 13:33:20 +0000 2020
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: "Views his mum's" - humorous disclaimer in bio. 325 following
@@ -248,6 +290,9 @@
 - **Profile URL**: https://twitter.com/marissalnew
 - **Location**: Tel Aviv
 - **Language**: English
+- **Last Tweet Date**: Fri Apr 04 13:02:46 +0000 2025
+- **Last Reply Date**: Tue Oct 17 14:30:11 +0000 2023
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: Blue verified. Contact: Mnewman129@bloomberg.net. 1,046 following
@@ -264,6 +309,9 @@
 - **Profile URL**: https://twitter.com/AsafWien
 - **Location**: Israel
 - **Language**: English and Hebrew
+- **Last Tweet Date**: Sun Mar 02 18:02:05 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: 522 following, editor role provides media connections
@@ -282,6 +330,9 @@
 - **Profile URL**: https://twitter.com/NoaSe
 - **Location**: Milan, Italy (Israeli expat)
 - **Language**: English
+- **Last Tweet Date**: Sat May 17 20:25:25 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: 527 following, 219 media posts
@@ -298,6 +349,9 @@
 - **Profile URL**: https://twitter.com/WomenStartupNtn
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Mon Aug 01 15:34:21 +0000 2022
+- **Last Reply Date**: Mon Nov 02 12:53:05 +0000 2020
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: Community account, 141 following
@@ -314,6 +368,9 @@
 - **Profile URL**: https://twitter.com/michaelbrous
 - **Location**: Not specified
 - **Language**: English
+- **Last Tweet Date**: Mon Apr 07 03:42:08 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: 479 following, Melio is a successful Israeli fintech unicorn
@@ -330,6 +387,9 @@
 - **Profile URL**: https://twitter.com/michaelit
 - **Location**: Tel Aviv
 - **Language**: Hebrew, English, Arabic (trilingual as shown in name)
+- **Last Tweet Date**: Wed Oct 22 17:02:47 +0000 2025
+- **Last Reply Date**: Sat Oct 11 18:10:19 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: "ישראל ישראלי של הפמיניזם" (Israeli Israeli of feminism). 998 following, 3,052 media posts
@@ -346,6 +406,9 @@
 - **Profile URL**: https://twitter.com/YoelTheDog
 - **Location**: Tel Aviv, Israel
 - **Language**: English
+- **Last Tweet Date**: Mon Oct 02 20:13:27 +0000 2023
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: "f IDF K9" - former IDF K9 handler. 797 following
@@ -362,6 +425,9 @@
 - **Profile URL**: https://twitter.com/alexvs
 - **Location**: Tel Aviv 🇮🇱
 - **Language**: English
+- **Last Tweet Date**: Thu Jul 03 06:32:39 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: Blue verified. 1,235 following, 154 media posts. Strong personal brand around mindset and meanings
@@ -380,6 +446,9 @@
 - **Profile URL**: https://twitter.com/MichaelKarmon
 - **Location**: אחוס"ל ציס-גנדר הטרו-נורמטיבי (complex Hebrew description)
 - **Language**: Primarily Hebrew
+- **Last Tweet Date**: Sat Oct 25 15:02:19 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: Bio quotes: "אין טעם לעמוד דום בהמנון אם מישהו מנצל זאת כדי לכייס אותך" (Zeev Jabotinsky) and "טקטיקה ללא אסטרטגיה היא רק הרעש שלפני התבוסה" (Sun Tzu)
@@ -398,6 +467,9 @@
 - **Profile URL**: https://twitter.com/ravidchen7
 - **Location**: Not specified
 - **Language**: Hebrew
+- **Last Tweet Date**: Fri Oct 24 20:34:09 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: Small but engaged profile, uses humor about startup life
@@ -414,6 +486,9 @@
 - **Profile URL**: https://twitter.com/ZypySy
 - **Location**: Not specified
 - **Language**: Hebrew
+- **Last Tweet Date**: Sat Oct 25 05:17:20 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: Bio: "לא סובלת בולשיט" (Doesn't tolerate BS). Mixed content focus
@@ -430,6 +505,9 @@
 - **Profile URL**: https://twitter.com/bullshit_sniper
 - **Location**: Israel
 - **Language**: Hebrew
+- **Last Tweet Date**: Wed Oct 22 15:09:31 +0000 2025
+- **Last Reply Date**: Sat Oct 18 18:07:52 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: Bio quote: "There are times when the world is rearranging itself, and at times like that, the right words can change the world."
@@ -446,6 +524,9 @@
 - **Profile URL**: https://twitter.com/charedilomatzuy
 - **Location**: Not specified
 - **Language**: Hebrew
+- **Last Tweet Date**: Wed Oct 22 19:41:50 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API Direct Search
 - **Notes**: Blue verified. Bio: "רגיש ומתחשב, חכמולוג ושנון, נראה לי...🤔" (Sensitive and considerate, smart and witty, seems to me...)
@@ -466,6 +547,9 @@
 - **Profile URL**: https://twitter.com/4xmg
 - **Location**: Tel-Aviv, Israel
 - **Language**: English
+- **Last Tweet Date**: Sat Oct 25 08:10:30 +0000 2025
+- **Last Reply Date**: Wed Oct 22 10:33:30 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Princeton Ph.D, very active account with strong engagement
@@ -482,6 +566,9 @@
 - **Profile URL**: https://twitter.com/cyb3rl0gg3r
 - **Location**: 757
 - **Language**: English
+- **Last Tweet Date**: Tue Dec 05 03:39:06 +0000 2023
+- **Last Reply Date**: Wed Mar 30 00:12:23 +0000 2022
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Created July 2019, MSSP consultant with hands-on security automation experience
@@ -498,6 +585,9 @@
 - **Profile URL**: https://twitter.com/ShaulB
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Fri Oct 24 06:49:13 +0000 2025
+- **Last Reply Date**: Tue Oct 21 14:34:35 +0000 2025
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Blue verified. Website: shaulbehr.com. Remarkable personal story with kidney donation
@@ -514,6 +604,9 @@
 - **Profile URL**: https://twitter.com/olegtk
 - **Location**: Redmond, WA (formerly Israel)
 - **Language**: English
+- **Last Tweet Date**: Tue Oct 14 16:38:27 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Ukraine → Israel → US path, supporting Ukraine. Created Feb 2008
@@ -530,6 +623,9 @@
 - **Profile URL**: https://twitter.com/avorobey
 - **Location**: Israel
 - **Language**: English (blogs in Russian)
+- **Last Tweet Date**: Wed Oct 08 17:11:25 +0000 2025
+- **Last Reply Date**: Tue Sep 09 09:06:34 +0000 2025
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Blue verified. Website: avva.livejournal.com. Internet veteran since 1993
@@ -546,6 +642,9 @@
 - **Profile URL**: https://twitter.com/dudiSendler
 - **Location**: Israel
 - **Language**: Primarily Hebrew
+- **Last Tweet Date**: Fri Jul 25 17:59:11 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Created May 2009. Strong engagement with 1,688 media posts
@@ -562,6 +661,9 @@
 - **Profile URL**: https://twitter.com/notarbut
 - **Location**: Israel
 - **Language**: Hebrew
+- **Last Tweet Date**: Mon Jan 29 12:56:57 +0000 2024
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Website: notarbut.co. Created Feb 2017. Co-hosts: @avietzioni @barnashon @galzellermayer
@@ -580,6 +682,9 @@
 - **Profile URL**: https://twitter.com/michaellacaplan
 - **Location**: NYC / Hong Kong / Bali
 - **Language**: English
+- **Last Tweet Date**: Sat Oct 25 06:54:13 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Blue verified. Website: michaellacaplan.com. Created Sept 2013. International presence with Israeli roots
@@ -596,6 +701,9 @@
 - **Profile URL**: https://twitter.com/greta_yulish
 - **Location**: Tel Aviv, Israel
 - **Language**: Bilingual (Hebrew name in bio: גרטה יוליש)
+- **Last Tweet Date**: Thu Sep 11 04:14:49 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Website: answer43.com. "No DMs" policy. "Own views, always" disclaimer. Created Aug 2017
@@ -612,6 +720,9 @@
 - **Profile URL**: https://twitter.com/IGoytom
 - **Location**: Who Cares? (Ethiopia/Israel connection)
 - **Language**: English
+- **Last Tweet Date**: Sun Oct 19 15:33:21 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Created Sept 2016. "RTs ≠ Endorsements" disclaimer. @chapa_et is Ethiopian fintech
@@ -628,6 +739,9 @@
 - **Profile URL**: https://twitter.com/shlomilahyani
 - **Location**: Bat-Yam, Israel
 - **Language**: Hebrew
+- **Last Tweet Date**: Sun Oct 12 14:37:01 +0000 2025
+- **Last Reply Date**: Wed Jun 28 16:53:25 +0000 2023
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Created April 2013. Bio: "יזם, פטריוט ישראלי, ראש עיריית בת ים לשעבר"
@@ -644,6 +758,9 @@
 - **Profile URL**: https://twitter.com/MatanYaffe
 - **Location**: Israel
 - **Language**: Hebrew
+- **Last Tweet Date**: Fri Oct 24 10:15:39 +0000 2025
+- **Last Reply Date**: Tue Sep 30 07:34:25 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Blue verified. Created Feb 2017. Bio: "המדינה הזו יכולה וצריכה להיות המדינה הכי טובה בעולם"
@@ -660,6 +777,9 @@
 - **Profile URL**: https://twitter.com/FotiLalcon
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Fri Dec 16 04:00:02 +0000 2022
+- **Last Reply Date**: Sat Nov 09 11:32:51 +0000 2019
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Created Nov 2011. Remarkably high tweet count (84K+) shows exceptional engagement. Website: ask.fm/LotiFalcon
@@ -678,6 +798,9 @@
 - **Profile URL**: https://twitter.com/levshapiro
 - **Location**: Tel Aviv, Israel
 - **Language**: English
+- **Last Tweet Date**: Wed Aug 30 14:39:14 +0000 2023
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Created Dec 2007. Website: lsvcapital.com. Hebrew University faculty connection
@@ -696,6 +819,9 @@
 - **Profile URL**: https://twitter.com/iconbuzz
 - **Location**: Silicon Valley
 - **Language**: English
+- **Last Tweet Date**: Tue Dec 05 23:24:30 +0000 2023
+- **Last Reply Date**: Thu Jan 26 20:33:05 +0000 2023
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API
 - **Notes**: Website: iconsv.org. Created Sept 2014. "A community of those who are passionate about Israeli Tech and Innovation"
@@ -783,6 +909,9 @@
 - **Profile URL**: https://twitter.com/TaubYaron
 - **Location**: Israel
 - **Language**: Hebrew
+- **Last Tweet Date**: Tue Oct 21 10:36:45 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Created Dec 2016. Active in Hebrew tech discussions about data science and engineering practices
@@ -799,6 +928,9 @@
 - **Profile URL**: https://twitter.com/DorelMasasa
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Fri Oct 24 17:11:53 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Created Nov 2019. Very active with 51K+ tweets. Strong technical voice on practical development topics
@@ -815,6 +947,9 @@
 - **Profile URL**: https://twitter.com/neriya_fisch
 - **Location**: Israel
 - **Language**: Hebrew
+- **Last Tweet Date**: Sat Oct 25 16:30:37 +0000 2025
+- **Last Reply Date**: Fri Oct 24 11:03:28 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Created Jan 2024. Bio: "כותב על היסטוריה, אצולה אירופית וסתם סיפורים מגניבים" (Writes about history, European aristocracy and cool stories). Active in escapism community
@@ -831,6 +966,9 @@
 - **Profile URL**: https://twitter.com/abbabon
 - **Location**: Israel
 - **Language**: Hebrew
+- **Last Tweet Date**: Thu Sep 04 13:16:13 +0000 2025
+- **Last Reply Date**: Thu Sep 04 14:01:12 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Created Sept 2008. Long-term presence in Israeli tech scene with management insights
@@ -847,6 +985,9 @@
 - **Profile URL**: https://twitter.com/alonisser
 - **Location**: Israel
 - **Language**: Hebrew and English
+- **Last Tweet Date**: Sat Oct 25 15:44:37 +0000 2025
+- **Last Reply Date**: Tue Oct 21 05:56:05 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Created May 2010. Blogs in Hebrew at degeladom.wordpress.com. 30K+ tweets show high engagement
@@ -863,6 +1004,9 @@
 - **Profile URL**: https://twitter.com/Fl0w21
 - **Location**: Free Palestine
 - **Language**: English
+- **Last Tweet Date**: Wed Oct 22 19:42:07 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Created Oct 2012. Active in tech and social justice intersections
@@ -879,6 +1023,9 @@
 - **Profile URL**: https://twitter.com/y_shif
 - **Location**: Israel
 - **Language**: Hebrew
+- **Last Tweet Date**: Sat Oct 25 16:00:38 +0000 2025
+- **Last Reply Date**: Sat Oct 25 08:34:24 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Created July 2009. Bio in Hebrew about family life and tech. Very active with 61K+ tweets
@@ -895,6 +1042,9 @@
 - **Profile URL**: https://twitter.com/ketacode
 - **Location**: Israel
 - **Language**: Hebrew and English
+- **Last Tweet Date**: Fri Oct 24 15:09:11 +0000 2025
+- **Last Reply Date**: Fri Oct 24 14:30:34 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Created Aug 2009. Website: berzniz.com. 11K+ tweets from CTO perspective
@@ -911,6 +1061,9 @@
 - **Profile URL**: https://twitter.com/shaiyallin
 - **Location**: Tel Aviv, Israel
 - **Language**: Hebrew and English
+- **Last Tweet Date**: Sat Oct 25 06:52:05 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Website: shaiyallin.com. Created Oct 2009. Also father, spouse, musician
@@ -927,6 +1080,9 @@
 - **Profile URL**: https://twitter.com/shlomiatar
 - **Location**: Tel Aviv / SF
 - **Language**: Hebrew and English
+- **Last Tweet Date**: Mon Oct 13 12:00:02 +0000 2025
+- **Last Reply Date**: Mon Oct 13 12:00:53 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Created Aug 2007. Sometimes takes photos. All opinions are his
@@ -943,6 +1099,9 @@
 - **Profile URL**: https://twitter.com/oriashkenazi
 - **Location**: Israel
 - **Language**: Hebrew
+- **Last Tweet Date**: Wed Oct 22 12:01:06 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Created April 2009. Bio: "פה בשביל ללמוד על העולם, עליכם ועל עצמי" (Here to learn about the world, about you, and about myself)
@@ -959,6 +1118,9 @@
 - **Profile URL**: https://twitter.com/Her_Yehuda
 - **Location**: Israel (על גדות הירדן - On the banks of the Jordan)
 - **Language**: Hebrew
+- **Last Tweet Date**: Wed Oct 22 05:10:01 +0000 2025
+- **Last Reply Date**: Mon Oct 20 11:06:35 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Created Jan 2024. Bio: "שברי לוחות" (Broken tablets). Active in developer community building
@@ -977,6 +1139,9 @@
 - **Profile URL**: https://twitter.com/BenSeri87
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Tue Dec 03 22:16:59 +0000 2024
+- **Last Reply Date**: Tue Dec 03 22:17:03 +0000 2024
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Created April 2017. Building security platform to identify and neutralize vulnerabilities at Zafran
@@ -993,6 +1158,9 @@
 - **Profile URL**: https://twitter.com/the_lightheart
 - **Location**: Tel Aviv, Israel
 - **Language**: English
+- **Last Tweet Date**: Tue Oct 21 05:37:02 +0000 2025
+- **Last Reply Date**: Tue Oct 21 05:37:07 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Created Sept 2021. Bio quote: "Whether you think you can, or you think you can't -- you're right"
@@ -1009,6 +1177,9 @@
 - **Profile URL**: https://twitter.com/DanielleDafni
 - **Location**: Tel Aviv - NY
 - **Language**: English
+- **Last Tweet Date**: Tue Jul 01 04:00:30 +0000 2025
+- **Last Reply Date**: Mon May 26 16:00:09 +0000 2025
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Created Dec 2021. Website: peech-ai.com. Sharing what it really takes to build
@@ -1025,6 +1196,9 @@
 - **Profile URL**: https://twitter.com/orslimy
 - **Location**: Israel (bio: "Never miss my events")
 - **Language**: English
+- **Last Tweet Date**: Fri Oct 24 09:23:12 +0000 2025
+- **Last Reply Date**: Thu Oct 23 09:15:03 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Created March 2015. Very active with 21K+ tweets. Host of Specks of Light podcast
@@ -1041,6 +1215,9 @@
 - **Profile URL**: https://twitter.com/elad_itzhakian
 - **Location**: 03 (Tel Aviv area code)
 - **Language**: English
+- **Last Tweet Date**: Sat Oct 25 18:10:27 +0000 2025
+- **Last Reply Date**: Fri Oct 24 07:15:05 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Website: elad.itzhakian.com. Created June 2010. Very active with 80K+ tweets
@@ -1057,6 +1234,9 @@
 - **Profile URL**: https://twitter.com/yaeli_chief
 - **Location**: Israel
 - **Language**: Hebrew
+- **Last Tweet Date**: Thu Oct 23 12:29:08 +0000 2025
+- **Last Reply Date**: Thu Sep 04 19:17:09 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Created Jan 2022. Bio includes diverse interests: writing, scripts, creative, hi-tech, OCD, music, poker
@@ -1073,6 +1253,9 @@
 - **Profile URL**: https://twitter.com/shemag8
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Wed Oct 22 15:30:42 +0000 2025
+- **Last Reply Date**: Tue Oct 21 15:04:37 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Website: blog.shem.dev. Created Aug 2012. Very active with 55K+ tweets. Pinned tweet from 2016
@@ -1089,6 +1272,9 @@
 - **Profile URL**: https://twitter.com/WaveGodAI
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Sat Oct 25 16:31:59 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Created Jan 2025 (very new profile). Building AI trading journal from scratch
@@ -1105,6 +1291,9 @@
 - **Profile URL**: https://twitter.com/taltimes2
 - **Location**: בני ברק (Bnei Brak)
 - **Language**: Hebrew
+- **Last Tweet Date**: Sat Oct 25 17:30:19 +0000 2025
+- **Last Reply Date**: Sat Oct 18 07:02:43 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Created May 2021. Very active with 24K+ tweets
@@ -1121,6 +1310,9 @@
 - **Profile URL**: https://twitter.com/ido_yaakov
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Thu Oct 23 05:23:00 +0000 2025
+- **Last Reply Date**: Thu Oct 23 05:23:01 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Created Dec 2017. Co-founder at Omnis, digital house of projects
@@ -1137,6 +1329,9 @@
 - **Profile URL**: https://twitter.com/amosbarjoseph
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Sat Feb 22 18:25:01 +0000 2025
+- **Last Reply Date**: Sat Feb 22 18:25:07 +0000 2025
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Website: getswan.com. Created Jan 2021
@@ -1153,6 +1348,9 @@
 - **Profile URL**: https://twitter.com/LironeGlikman
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Thu Sep 04 14:20:11 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Website: LironeGlikman.com. Created March 2012. Biz Dev focus
@@ -1169,6 +1367,9 @@
 - **Profile URL**: https://twitter.com/YoavVilner
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Fri Oct 10 18:16:38 +0000 2025
+- **Last Reply Date**: Mon Oct 02 18:29:29 +0000 2023
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Created March 2012. Self-describes as "a lame person overall" (humor)
@@ -1185,6 +1386,9 @@
 - **Profile URL**: https://twitter.com/Shvartsbroit
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Fri Oct 17 07:19:15 +0000 2025
+- **Last Reply Date**: Sun Oct 12 13:38:10 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Created May 2008. LinkedIn: linkedin.com/in/shimon-shvartsbroit-825ab53. Very active with 29K+ tweets
@@ -1201,6 +1405,9 @@
 - **Profile URL**: https://twitter.com/shilomagen
 - **Location**: Tel Aviv, Israel
 - **Language**: English
+- **Last Tweet Date**: Tue Oct 21 00:25:58 +0000 2025
+- **Last Reply Date**: Mon Sep 01 06:02:59 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Created March 2010. Also acro pilot. Unique combination of technical and creative interests
@@ -1217,6 +1424,9 @@
 - **Profile URL**: https://twitter.com/alonlif
 - **Location**: Tel Aviv, NY, London
 - **Language**: English
+- **Last Tweet Date**: Thu Oct 23 22:43:46 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Created Dec 2010. Personal views. Very active with 19K+ tweets. International presence
@@ -1235,6 +1445,9 @@
 - **Profile URL**: https://twitter.com/Yisrael_O
 - **Location**: Remote
 - **Language**: English
+- **Last Tweet Date**: Sat Oct 25 17:28:22 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Website: linktr.ee/israelogundiran. Created March 2020. Active freelancer with portfolio
@@ -1251,6 +1464,9 @@
 - **Profile URL**: https://twitter.com/sagishrieber
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Tue Oct 07 21:56:38 +0000 2025
+- **Last Reply Date**: Tue Dec 24 21:08:09 +0000 2024
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Website: sagishrieber.com/IG. Created Jan 2010. Father x 3 & Entrepreneur. Host @ The Commit First Podcast
@@ -1267,6 +1483,9 @@
 - **Profile URL**: https://twitter.com/RoyAlbeckDesign
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Tue Aug 26 08:07:53 +0000 2025
+- **Last Reply Date**: Tue Jul 15 14:00:26 +0000 2025
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Website: royalbeck.design. Created June 2011. Mentoring focus is valuable for designer community
@@ -1283,6 +1502,9 @@
 - **Profile URL**: https://twitter.com/natiberk
 - **Location**: Herzliya, Israel
 - **Language**: English
+- **Last Tweet Date**: Thu Jul 18 17:31:30 +0000 2024
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Website: effectiveproductmanagement.com. Created Sept 2009. Has professional PM account: @pmeffective
@@ -1299,6 +1521,9 @@
 - **Profile URL**: https://twitter.com/eyal_zuri
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Wed Oct 22 07:13:36 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Website: muz.li. Created Dec 2008. Muzli is well-known in design community
@@ -1315,6 +1540,9 @@
 - **Profile URL**: https://twitter.com/zivtzi
 - **Location**: Tel-Aviv, Israel
 - **Language**: English
+- **Last Tweet Date**: Sat Aug 19 18:40:53 +0000 2023
+- **Last Reply Date**: Sat Aug 19 18:47:00 +0000 2023
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Created Jan 2008. Co-Founder at Simple Happy Kitchen (@simplehappykchn) and Hello Heart (@HelloHeartApp), Ex-eBay
@@ -1331,6 +1559,9 @@
 - **Profile URL**: https://twitter.com/boazrossano
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Tue Aug 26 13:53:03 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Website: 2cents.co.il. Created Jan 2009. Lectures on UX and design topics
@@ -1347,6 +1578,9 @@
 - **Profile URL**: https://twitter.com/dray_ilan
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Sat Oct 25 09:08:18 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Website: FusionExperience.design. Created Sept 2015. Very active with 18K+ tweets. Unique cultural mix
@@ -1402,6 +1636,9 @@
 - **Profile URL**: https://twitter.com/MotiWolff
 - **Location**: Kfar Chabad, Israel
 - **Language**: English
+- **Last Tweet Date**: Fri Oct 24 11:19:26 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Active since 2009. Small but engaged following in fullstack development
@@ -1418,6 +1655,9 @@
 - **Profile URL**: https://twitter.com/StavBarak
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Sat Oct 25 07:29:24 +0000 2025
+- **Last Reply Date**: Fri Sep 12 06:46:57 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Active web developer with growing engagement
@@ -1434,6 +1674,9 @@
 - **Profile URL**: https://twitter.com/EYRosensweig
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Fri Oct 24 07:10:01 +0000 2025
+- **Last Reply Date**: Fri Oct 17 06:45:10 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. PhD-level CS expertise with public engagement through podcasting
@@ -1450,6 +1693,9 @@
 - **Profile URL**: https://twitter.com/MozYossi48495
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Sat Oct 25 20:01:26 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Smaller following but relevant tech voice
@@ -1466,6 +1712,9 @@
 - **Profile URL**: https://twitter.com/HaLeiVi
 - **Location**: Israel
 - **Language**: English and Hebrew
+- **Last Tweet Date**: Sun Aug 31 20:18:58 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Represents important demographic in Israeli tech - religious community members transitioning to tech
@@ -1482,6 +1731,9 @@
 - **Profile URL**: https://twitter.com/guywiener
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Sat Oct 25 11:01:14 +0000 2025
+- **Last Reply Date**: Fri Oct 24 09:44:15 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Strong data science perspective with programming depth
@@ -1500,6 +1752,9 @@
 - **Profile URL**: https://twitter.com/korndaniel1
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Sat Oct 25 18:39:58 +0000 2025
+- **Last Reply Date**: Tue Oct 21 16:58:06 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Lemonade is one of Israel's most successful tech companies
@@ -1516,6 +1771,9 @@
 - **Profile URL**: https://twitter.com/OmerAlali7
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Wed Oct 22 20:15:29 +0000 2025
+- **Last Reply Date**: Thu Oct 16 19:53:01 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Defense-tech is major sector in Israeli tech ecosystem but rarely represented
@@ -1538,6 +1796,9 @@
 - **Profile URL**: https://twitter.com/deiner
 - **Location**: Tel Aviv, Israel
 - **Language**: English
+- **Last Tweet Date**: Wed Sep 13 12:06:41 +0000 2017
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Active since 2009. Website: tel-aviv based designer
@@ -1554,6 +1815,9 @@
 - **Profile URL**: https://twitter.com/leonidjack
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Wed Mar 11 01:03:54 +0000 2020
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Website: jacksdesign.net. Active since 2011. GetNexar is AI-powered dashcam company
@@ -1570,6 +1834,9 @@
 - **Profile URL**: https://twitter.com/dainareed
 - **Location**: Tel Aviv
 - **Language**: English
+- **Last Tweet Date**: Mon Jul 11 22:30:21 +0000 2022
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Website: dainareed.com. Active since 2008. "Web Design is my first love"
@@ -1588,6 +1855,9 @@
 - **Profile URL**: https://twitter.com/shayhcl
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Fri Jul 18 19:01:59 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Active since 2009. Israel/Brasil background. Samsung Galaxy S21 FE user
@@ -1604,6 +1874,9 @@
 - **Profile URL**: https://twitter.com/ravidor
 - **Location**: Israel, Herzliya
 - **Language**: English
+- **Last Tweet Date**: Tue Oct 14 03:29:22 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Website: about.me/ravidor. Active since 2006. Bio: "My opinions are mine."
@@ -1626,6 +1899,9 @@
 - **Profile URL**: https://twitter.com/O_Magger
 - **Location**: Israel (Hebrew tweets, discusses Israeli hi-tech)
 - **Language**: Hebrew
+- **Last Tweet Date**: Sat Oct 25 14:37:08 +0000 2025
+- **Last Reply Date**: Sat Oct 18 21:09:04 +0000 2025
+- **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Hebrew Search Discovery)
 - **Notes**: Active since 2020. Bio: "Programmer. There will be tweets about basketball, hi-tech, writing, kids and progress/hope. #עודד_כותב_מדב"
@@ -1637,7 +1913,6 @@
 ---
 
 ### Additional Developers & Engineers (Grok Discovery + X API Validation - Session 4 Continued)
-
 #### @DorelMasasa (1,188 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Dorel Masasa
 - **Role**: Software Developer @ Fortinet
@@ -1648,12 +1923,15 @@
 - **Profile URL**: https://twitter.com/DorelMasasa
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Fri Oct 24 17:11:53 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
+
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Active since 2019. High tweet volume shows strong engagement
 
 ---
-
 #### @alonisser (1,793 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Alon Nisser
 - **Role**: Developer, Open Source Advocate
@@ -1664,12 +1942,15 @@
 - **Profile URL**: https://twitter.com/alonisser
 - **Location**: Israel
 - **Language**: Hebrew and English
+- **Last Tweet Date**: Sat Oct 25 15:44:37 +0000 2025
+- **Last Reply Date**: Tue Oct 21 05:56:05 +0000 2025
+- **Hebrew Writer**: Yes
+
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Active since 2010. Bio includes tech blog links. Very active with 30K+ tweets
 
 ---
-
 #### @abbabon (654 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Amit Netanel
 - **Role**: Tech Community Member
@@ -1680,6 +1961,10 @@
 - **Profile URL**: https://twitter.com/abbabon
 - **Location**: Israel
 - **Language**: Hebrew
+- **Last Tweet Date**: Thu Sep 04 13:16:13 +0000 2025
+- **Last Reply Date**: Thu Sep 04 14:01:12 +0000 2025
+- **Hebrew Writer**: Yes
+
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Active since 2008. Hebrew bio: "מזיז הטרנספורמים המקורי. ילד שמנת מרחביה"
@@ -1698,12 +1983,14 @@
 - **Profile URL**: https://twitter.com/DanielleDafni
 - **Location**: Tel Aviv - NY
 - **Language**: English
+- **Last Tweet Date**: Tue Jul 01 04:00:30 +0000 2025
+- **Last Reply Date**: Mon May 26 16:00:09 +0000 2025
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Active since 2021. Website: peech-ai.com. Sharing what it really takes to build
 
 ---
-
 #### @ido_yaakov (64 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Ido Yaakov
 - **Role**: Project Manager, Co-founder @ Omnis
@@ -1714,6 +2001,10 @@
 - **Profile URL**: https://twitter.com/ido_yaakov
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Thu Oct 23 05:23:00 +0000 2025
+- **Last Reply Date**: Thu Oct 23 05:23:01 +0000 2025
+- **Hebrew Writer**: Yes
+
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Active since 2017. Co-founder at Omnis digital house
@@ -1732,6 +2023,9 @@
 - **Profile URL**: https://twitter.com/sagishrieber
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Tue Oct 07 21:56:38 +0000 2025
+- **Last Reply Date**: Tue Dec 24 21:08:09 +0000 2024
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Active since 2010. Website: sagishrieber.com. Host @ The Commit First Podcast
@@ -1748,6 +2042,9 @@
 - **Profile URL**: https://twitter.com/RoyAlbeckDesign
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Tue Aug 26 08:07:53 +0000 2025
+- **Last Reply Date**: Tue Jul 15 14:00:26 +0000 2025
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Active since 2011. Website: royalbeck.design. Loves mentoring new designers
@@ -1764,12 +2061,14 @@
 - **Profile URL**: https://twitter.com/natiberk
 - **Location**: Herzliya, Israel
 - **Language**: English
+- **Last Tweet Date**: Thu Jul 18 17:31:30 +0000 2024
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Active since 2009. Website: effectiveproductmanagement.com. Has professional account @pmeffective
 
 ---
-
 #### @zivtzi (2,699 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Ziv Meltzer (זיו מלצר)
 - **Role**: Designer, Co-Founder @ Simple Happy Kitchen, Designer @ Hello Heart
@@ -1780,12 +2079,15 @@
 - **Profile URL**: https://twitter.com/zivtzi
 - **Location**: Tel-Aviv, Israel
 - **Language**: Hebrew and English
+- **Last Tweet Date**: Sat Aug 19 18:40:53 +0000 2023
+- **Last Reply Date**: Sat Aug 19 18:47:00 +0000 2023
+- **Hebrew Writer**: Yes
+
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Active since 2008. Ex @ebay. Co-founder at Simple Happy Kitchen. Strong health tech focus
 
 ---
-
 #### @boazrossano (282 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Boaz Rossano
 - **Role**: Entrepreneur & UX Specialist
@@ -1796,6 +2098,10 @@
 - **Profile URL**: https://twitter.com/boazrossano
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Tue Aug 26 13:53:03 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
+
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Active since 2009. Website: 2cents.co.il. Lecturer perspective on UX
@@ -1812,6 +2118,9 @@
 - **Profile URL**: https://twitter.com/dray_ilan
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Sat Oct 25 09:08:18 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Blue verified. Active since 2015. Website: FusionExperience.design. CXO at 6+ companies
@@ -1828,6 +2137,9 @@
 - **Profile URL**: https://twitter.com/mauricehason
 - **Location**: Israel
 - **Language**: English
+- **Last Tweet Date**: Sat Mar 12 10:13:09 +0000 2022
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: No
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Active since 2009. Website: mauricehason.com. 22+ years of design experience
@@ -1837,7 +2149,6 @@
 **Total Tracker Count**: 99 verified nano-influencers (87 previous + 12 new)
 
 ---
-
 #### @oriashkenazi (368 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Ori Ashkenazi
 - **Role**: Tech Community Member
@@ -1848,6 +2159,10 @@
 - **Profile URL**: https://twitter.com/oriashkenazi
 - **Location**: Israel
 - **Language**: Hebrew
+- **Last Tweet Date**: Wed Oct 22 12:01:06 +0000 2025
+- **Last Reply Date**: N/A
+- **Hebrew Writer**: Yes
+
 - **Added**: October 25, 2025
 - **Last Verified**: October 25, 2025 via X API (Grok Discovery)
 - **Notes**: Active since 2009. Hebrew bio: "פה בשביל ללמוד על העולם, עליכם ועל עצמי" (Here to learn about the world, you and myself)
