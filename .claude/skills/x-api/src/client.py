@@ -8,52 +8,11 @@ import os
 import json
 import typer
 import requests
-from typing import Optional
-from pydantic import BaseModel
 from dotenv import load_dotenv
 
+from models import UserTimelineResponse, SearchResponse, SearchTweet
+
 load_dotenv()
-
-
-class UserTimelineResponse(BaseModel):
-    """Response model for user timeline with calculated fields."""
-    status: str
-    profile: str
-    blue_verified: bool
-    verification_type: Optional[str] = None
-    affiliates: list
-    business_account: list
-    desc: str
-    name: str
-    website: Optional[str] = None
-    protected: Optional[bool] = None
-    location: Optional[str] = None
-    following: int
-    followers: int
-    statuses_count: int
-    media_count: int
-    created_at: str
-    last_tweet_date: Optional[str] = None
-    last_reply_date: Optional[str] = None
-    is_hebrew_writer: bool = False
-
-
-class SearchTweet(BaseModel):
-    """Individual tweet in search results (excludes id and media)."""
-    screen_name: str
-    bookmarks: int
-    favorites: int
-    created_at: str
-    text: str
-    lang: str
-    quotes: int
-    replies: int
-    retweets: int
-
-
-class SearchResponse(BaseModel):
-    """Response model for tweet search results."""
-    timeline: list[SearchTweet]
 
 
 class TwitterAPIClient:
@@ -267,7 +226,6 @@ def search(
     except requests.exceptions.RequestException as e:
         typer.secho(f"Request Error: {e}", fg=typer.colors.RED, err=True)
         raise typer.Exit(1)
-
 
 
 if __name__ == "__main__":

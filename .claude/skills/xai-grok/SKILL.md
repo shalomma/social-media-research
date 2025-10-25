@@ -43,7 +43,7 @@ Use this skill when:
 
 ## Usage
 
-The skill uses a modern Typer-based CLI at `.claude/skills/xai-grok/scripts/grok.py`:
+The skill uses a modern Typer-based CLI at `.claude/skills/xai-grok/src/grok.py`:
 
 ### Basic Usage (X Search + Web Search enabled by default)
 

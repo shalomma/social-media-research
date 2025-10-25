@@ -16,7 +16,8 @@
       "Bash(python3:*)",
       "Bash(echo:*)",
       "Bash(cat:*)",
-      "mcp__chrome-devtools"
+      "mcp__chrome-devtools",
+      "Bash(/usr/bin/python3:*)"
     ],
     "deny": [],
     "ask": []

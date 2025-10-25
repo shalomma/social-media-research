@@ -9,20 +9,9 @@ A unified Twitter/X API client providing access to multiple endpoints through Ra
 
 ## CLI Usage
 
-The unified client (`.claude/skills/x-api/scripts/client.py`) provides four subcommands with beautiful, rich-formatted output.
+The unified client (`.claude/skills/x-api/src/client.py`) provides four subcommands with beautiful, rich-formatted output.
 
-### 1. Get User Information
-
-Retrieve detailed user information by screen name and rest_id.
-
-```bash
-python3 client.py user <screenname>
-
-# Example:
-python3 client.py user elonmusk
-```
-
-### 2. Get User Timeline
+### 1. Get User Timeline
 
 Retrieve a user's timeline (tweets) by screen name. Returns a structured response with user information and the date of the most recent tweet.
 
@@ -46,8 +35,6 @@ The timeline command returns a `UserTimelineResponse` Pydantic model with the fo
   "verification_type": null,
   "affiliates": [],
   "business_account": [],
-  "avatar": "https://...",
-  "header_image": "https://...",
   "desc": "User bio description",
   "name": "Display Name",
   "website": "example.com",
@@ -58,34 +45,13 @@ The timeline command returns a `UserTimelineResponse` Pydantic model with the fo
   "statuses_count": 5000,
   "media_count": 50,
   "created_at": "Mon Jan 01 00:00:00 +0000 2020",
-  "pinned_tweet_ids_str": [],
-  "id": "123456789",
   "last_tweet_date": "Thu Oct 23 16:30:00 +0000 2025",
   "last_reply_date": "Fri Oct 24 09:55:51 +0000 2025",
   "is_hebrew_writer": false
 }
 ```
 
-**Calculated Fields:**
-
-- `last_tweet_date`: The `created_at` timestamp of the user's most recent original tweet (where `tweet_id == conversation_id`), or `null` if no tweets are available.
-
-- `last_reply_date`: The `created_at` timestamp of the user's most recent reply (where `tweet_id != conversation_id`), or `null` if no replies are available.
-
-- `is_hebrew_writer`: Boolean flag indicating whether the user has posted any content in Hebrew (`lang == "he"`) in their timeline.
-
-### 3. Get User's Replies
-
-Retrieve replies to a specific tweet by tweet ID.
-
-```bash
-python3 client.py replies <screenname>
-
-# Example:
-python3 client.py replies elonmusk
-```
-
-### 4. Search Tweets
+### 2. Search Tweets
 
 Search for tweets matching a query with optional search type filtering. Returns a filtered response excluding `next_cursor`, and omitting `id` and `media` fields from each tweet.
 
@@ -122,8 +88,6 @@ The search command returns a `SearchResponse` Pydantic model with the following 
   ]
 }
 ```
-
-**Note:** The response excludes `next_cursor`, `id`, and `media` fields for cleaner, more focused results.
 
 #### Advanced Search Operators
 
@@ -190,9 +154,8 @@ python3 client.py search "from:NASA filter:images since:2025-01-01"
 ## Common Use Cases
 
 - **Research**: Retrieve and analyze user timelines, search for specific topics
-- **Monitoring**: Track mentions, hashtags, or specific users
 - **Data Collection**: Gather tweets, replies, and user information for analysis
-- **Validation**: Verify Twitter usernames and IDs
+- **Validation**: Verify Twitter usernames or number of followers
 - **Engagement Analysis**: Analyze replies and interactions on specific tweets
 
 ## Error Handling
