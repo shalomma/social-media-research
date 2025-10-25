@@ -3,6 +3,9 @@
     "allow": [
       "WebSearch",
       "WebFetch",
+      "Update",
+      "Edit",
+      "Read",
       "Skill(xai-grok)",
       "Skill(x-api)",
       "Bash(source:*)",
@@ -13,13 +16,7 @@
       "Bash(python3:*)",
       "Bash(echo:*)",
       "Bash(cat:*)",
-      "mcp__chrome-devtools__list_pages",
-      "mcp__chrome-devtools__navigate_page",
-      "mcp__chrome-devtools__take_snapshot",
-      "mcp__chrome-devtools__new_page",
-      "mcp__chrome-devtools__click",
-      "mcp__chrome-devtools__wait_for",
-      "mcp__chrome-devtools__fill"
+      "mcp__chrome-devtools"
     ],
     "deny": [],
     "ask": []
