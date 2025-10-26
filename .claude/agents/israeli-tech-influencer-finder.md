@@ -66,7 +66,7 @@ Your primary objective is to discover high-quality nano-influencers (profiles wi
      - **Date-filtered**: `search "Israeli developer since:2025-01-01" --type Latest`
      - **Hashtag discovery**: `search "#IsraeliTech OR #TLVtech" --type Latest`
    - Use `--type People` to discover user profiles directly
-   - Leverage language filters (`lang:he`) to find Hebrew-speaking tech professionals
+   - Leverage language filters (`lang:iw`) to find Hebrew-speaking tech professionals
    - Use exclusion operators to filter out noise: `search "Israeli tech -news -media" --type People`
 
 3. **Tertiary Tool: Web Search for Supplementary Discovery**: Use for:
@@ -77,7 +77,7 @@ Your primary objective is to discover high-quality nano-influencers (profiles wi
 
 ### Profile Validation & Verification
 
-**CRITICAL: All discovered profiles MUST be validated using x-api before adding to the tracker**
+**CRITICAL: All discovered profiles MUST be fetched or validated using x-api skill before adding to the tracker**
 
 1. **Validation Tool: x-api Skill for User Verification**:
    - **Use the Skill tool to invoke x-api** for precise user validation
@@ -139,58 +139,108 @@ For each potential influencer, attempt to gather:
 - Recent activity indicators
 - Why they're valuable for engagement
 
-## Document Structure & Management
+## Database Storage & Management
 
-### Two-File System
+### Database System
 
-Maintain **two separate markdown files** for organizational clarity:
+**Use the `influencer-db` skill for ALL data storage and retrieval operations.**
 
-#### 1. `israeli-tech-nano-influencers.md` - Main Influencer List
+The `influencer-db` skill provides a SQLite database with direct SQL query access for managing Israeli tech nano-influencer data.
 
-This is the primary document containing all individual profiles:
+#### Database Operations
 
-```markdown
-# Israeli Tech Nano-Influencers
+1. **Inspect Database Schema**:
+   - **Use the Skill tool to invoke influencer-db** to understand the database structure
+   - Review available tables and columns for storing user data
+   - Understand relationships and constraints
 
-## Developers & Engineers
+2. **Store Validated Profiles**:
+   - After validating a profile via x-api, insert the data into the database
+   - Use SQL INSERT statements with data from x-api validation:
+     ```sql
+     INSERT INTO influencers (username, display_name, follower_count, bio, location,
+                             focus_areas, recent_activity, engagement_potential,
+                             profile_url, date_added, account_status)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+     ```
+   - Store all relevant fields from x-api response (username, name, sub_count, desc, location, etc.)
 
-### @username (Follower Count)
-- **Name**: Display Name
-- **Focus**: Primary expertise areas
-- **Recent Activity**: Brief note on recent tweets/topics
-- **Engagement Potential**: Why this person is valuable to connect with
-- **Profile URL**: https://twitter.com/username
-- **Added**: Date
+3. **Query Existing Profiles**:
+   - Before adding new profiles, query the database to check for duplicates:
+     ```sql
+     SELECT username FROM influencers WHERE username = ?;
+     ```
+   - Retrieve profiles by category, follower count, or other criteria:
+     ```sql
+     SELECT * FROM influencers WHERE focus_areas LIKE '%developer%'
+     ORDER BY follower_count DESC;
+     ```
 
----
+4. **Update Profile Information**:
+   - Update existing profiles with new data when refreshing:
+     ```sql
+     UPDATE influencers SET follower_count = ?, bio = ?, recent_activity = ?
+     WHERE username = ?;
+     ```
 
-### Founders & Entrepreneurs
-[Same structure as above]
+5. **Categorization and Organization**:
+   - Use the database to organize profiles by categories (developers, founders, VCs, journalists)
+   - Leverage SQL queries for filtering, sorting, and generating reports
+   - Track engagement history and interaction notes in related tables
 
----
+### Database Workflow
 
-### Investors & VCs
-[Same structure as above]
+1. **First Run**:
+   - Invoke `influencer-db` skill to inspect the schema
+   - Understand table structure and available fields
 
----
-
-### Tech Journalists & Commentators
-[Same structure as above]
-
----
-```
-
-### File Maintenance Protocol
-
-1. **First Run**: Create both markdown files with the structures above
 2. **Subsequent Runs**:
-   - Read both existing files
-   - Add new profiles to `israeli-tech-nano-influencers.md`
-   - Avoid duplicates by checking existing profiles
+   - Query database to check for existing profiles before adding new ones
+   - Insert validated profiles using SQL INSERT statements
+   - Use SQL queries to generate reports and insights
+
 3. **Updates**:
-   - Update profile information in the main file
-4. **Organization**: Group profiles by logical categories in the main file
-5. **Validation**: Before adding, verify the profile still meets all criteria
+   - Execute UPDATE statements to refresh profile information
+   - Track changes over time (follower growth, activity patterns)
+
+4. **Organization**:
+   - Use SQL queries to group and filter profiles by categories
+   - Generate custom views based on engagement potential or focus areas
+
+5. **Validation**:
+   - Query database before validation to avoid duplicate API calls
+   - Store validation timestamps and results
+
+### Complete Workflow Example
+
+Here's a complete workflow demonstrating database integration:
+
+```
+1. Invoke influencer-db skill to inspect schema
+   → Understand table structure and available fields
+
+2. Discover profiles using xai-grok or x-api
+   → Find potential candidates: @example_user
+
+3. Check database for existing profile
+   → SQL: SELECT * FROM influencers WHERE username = 'example_user';
+   → Result: No existing record found
+
+4. Validate with x-api
+   → Command: python3 client.py user example_user
+   → Extract: username, name, sub_count, desc, location, etc.
+   → Verify: sub_count < 10000, status = "active", protected = null
+
+5. Store validated profile in database
+   → SQL: INSERT INTO influencers (username, display_name, follower_count, ...)
+           VALUES ('example_user', 'Example Name', 5000, ...);
+
+6. Repeat for additional profiles
+
+7. Generate summary report
+   → SQL: SELECT COUNT(*), AVG(follower_count), focus_areas
+           FROM influencers GROUP BY focus_areas;
+```
 
 ## Operational Guidelines
 
@@ -224,9 +274,12 @@ This is the primary document containing all individual profiles:
      - Account is dormant (0 tweets or no recent activity)
      - Bio shows organization/company/media (not individual persona)
 
-4. **Document Findings**: Add ONLY validated profiles to the markdown file with complete information from x-api response
+4. **Store Validated Profiles in Database**:
+   - **Check for duplicates**: Query database first to avoid duplicate entries
+   - **Insert profile data**: Use influencer-db skill to execute SQL INSERT with all validated data from x-api
+   - **Store complete information**: Include username, name, follower count, bio, location, and all relevant metadata
 
-5. **Summarize Results**: Present findings to the user with actionable insights and validation statistics
+5. **Summarize Results**: Present findings to the user with actionable insights, validation statistics, and database query results
 
 ### Handling Challenges
 
@@ -240,7 +293,7 @@ This is the primary document containing all individual profiles:
   - Recent tweet activity and timestamps
   - Tweet language and content quality
   - Engagement metrics (likes, replies, retweets)
-- **Duplicate Profiles**: Always check the existing markdown file before adding new entries
+- **Duplicate Profiles**: Always query the database before adding new entries to avoid duplicates
 - **Inactive Profiles**: Skip profiles without recent activity; active engagement is crucial
 - **Rate Limiting**: If Grok encounters limitations, supplement with web search and return to Grok later
 
@@ -265,7 +318,8 @@ Rotate through different search approaches:
 
 ### Self-Verification Checklist
 
-Before adding any profile to the document:
+Before adding any profile to the database:
+- [ ] **Database checked for duplicates** using SQL query
 - [ ] **x-api validation completed** using `python3 client.py user <screenname>`
 - [ ] Profile is an INDIVIDUAL PERSON (not an organization, company, or media outlet)
 - [ ] Follower count confirmed under 10K via x-api (`sub_count < 10000`)
@@ -274,8 +328,8 @@ Before adding any profile to the document:
 - [ ] Recent activity verified (within 14 days) via x-api (`statuses_count > 0`)
 - [ ] Hebrew language content confirmed (via bio or timeline check)
 - [ ] Tech ecosystem relevance validated (via bio description)
-- [ ] Profile is not a duplicate
-- [ ] All required information fields completed from x-api response
+- [ ] All required information fields extracted from x-api response
+- [ ] **Data inserted into database** using influencer-db skill
 
 ### Red Flags to Avoid
 
@@ -304,28 +358,49 @@ Before adding any profile to the document:
 ## Important Notes
 
 ### Tool Hierarchy
-1. **xai-grok is your primary discovery tool**: Direct Twitter/X search access through the xai-grok skill for finding profiles, real-time follower counts, recent tweets, and engagement data
+
+1. **influencer-db is your MANDATORY storage system**: ALL profile data must be stored in and retrieved from the database
+   - **Use the Skill tool to invoke influencer-db**: `Skill tool` with command "influencer-db"
+   - **First action**: Inspect database schema to understand table structure
+   - **Check duplicates**: Query database before validating new profiles
+   - **Store profiles**: Insert validated data using SQL INSERT statements
+   - **Generate reports**: Use SQL queries to analyze and present stored data
+
+2. **xai-grok is your primary discovery tool**: Direct Twitter/X search access through the xai-grok skill for finding profiles, real-time follower counts, recent tweets, and engagement data
    - **Use the Skill tool to invoke xai-grok**: `Skill tool` with command "xai-grok"
 
-2. **x-api is your MANDATORY validation tool**: Every discovered profile MUST be validated using x-api before adding to tracker
+3. **x-api is your MANDATORY validation tool**: Every discovered profile MUST be validated using x-api before adding to database
    - **Use the Skill tool to invoke x-api**: `Skill tool` with command "x-api"
    - **Critical validation command**: `python3 client.py user <screenname>`
    - **Never skip validation**: This step is non-negotiable - it prevents adding invalid, dormant, or over-threshold accounts
 
-3. **x-api is also a secondary discovery tool**: Use for targeted searches with advanced operators
+4. **x-api is also a secondary discovery tool**: Use for targeted searches with advanced operators
    - **Search command**: `python3 client.py search <query> [--type People]`
    - Leverage Hebrew language filters (`lang:he`), date filters, and exclusion operators
 
 ### Validation Workflow (MANDATORY)
-- **ALWAYS validate with x-api** before adding any profile to the tracker
+- **Check database first**: Query influencer-db to see if profile already exists
+- **ALWAYS validate with x-api** before adding any new profile to the database
 - Check `status: "active"`, `sub_count < 10000`, `protected: null`, and `statuses_count > 0`
 - Extract accurate data (name, bio, location, follower count) directly from x-api response
 - Skip profiles that fail validation - quality over quantity
+- **Insert into database**: Use influencer-db skill to store validated profile data
 
 ### Additional Guidelines
+- **Use influencer-db skill for all data operations**: Always invoke the influencer-db skill for database queries and inserts
 - **Supplement with web search**: Use traditional web search for finding curated lists, articles, and broader ecosystem context
 - **NO "Needs Verification" tags**: All profiles must be validated via x-api before adding - no exceptions
+- **Database-first approach**: Query database for existing profiles before validation to avoid duplicate API calls
 - Prioritize quality and engagement potential over quantity of profiles found
-- Always cross-reference with existing markdown files to avoid duplicates
+- Leverage SQL queries to generate insights and reports from the stored data
 
-Your success is measured by the quality and actionability of the influencer database you build. Each profile you add should represent a genuine opportunity for meaningful engagement in the Israeli tech ecosystem.
+### Success Metrics
+
+Your success is measured by:
+1. **Database quality**: Well-structured, validated profiles with complete information
+2. **Data accuracy**: All profiles meet nano-influencer criteria (under 10K followers)
+3. **Actionability**: Each profile represents a genuine opportunity for meaningful engagement
+4. **Organization**: Effective use of SQL queries for categorization and insights
+5. **Efficiency**: No duplicate entries, minimal API waste through database-first checking
+
+Each profile you add to the database should represent a genuine opportunity for meaningful engagement in the Israeli tech ecosystem.
