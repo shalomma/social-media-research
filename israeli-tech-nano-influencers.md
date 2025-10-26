@@ -4,7 +4,7 @@
 
 ---
 
-#### @shar1z (4,024 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @shar1z (4,023 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Sharone Revah Zitzman
 - **Role**: Fractional DevRel, Co-organizer @TLVCommunity, @DevOpsDaysTLV & @CloudNativeIL
 - **Focus**: DevRel, open source community building, DevOps, Cloud Native
@@ -18,12 +18,12 @@
 - **Last Reply Date**: Mon Oct 13 07:13:19 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 24, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Active since 2009, co-hosts @devadvocast podcast, runs #shar1zbookclub
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @TalKeinan (883 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @TalKeinan (882 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Tal Keinan
 - **Role**: Managing Partner at Dynamic Loop Capital
 - **Focus**: Venture capital, Israeli innovation, entrepreneurship, tech strategy
@@ -34,12 +34,12 @@
 - **Location**: TLV, ISR
 - **Language**: English
 - **Last Tweet Date**: Sun May 12 20:44:55 +0000 2024
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 24, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Active since 2007. Lower follower count than expected but solid nano-influencer profile for VC/startup ecosystem.
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @danielbmarkham (1,632 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -52,16 +52,16 @@
 - **Profile URL**: https://twitter.com/danielbmarkham
 - **Location**: East Coast, United States
 - **Language**: English
-- **Last Tweet Date**: Fri Oct 24 02:02:40 +0000 2025
+- **Last Tweet Date**: Sun Oct 26 00:47:08 +0000 2025
 - **Last Reply Date**: Thu Oct 23 19:02:36 +0000 2025
 - **Hebrew Writer**: No
 - **Added**: October 24, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Active since 2009. NOT Israeli-based (US East Coast), but may have tech connections worth exploring. Blue verified account.
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @TomerDean (2,640 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @TomerDean (2,636 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Tomer Dean
 - **Role**: Serial Entrepreneur, Tech Builder
 - **Focus**: Entrepreneurship, startup building, Israeli tech ecosystem
@@ -72,19 +72,19 @@
 - **Location**: Tel Aviv
 - **Language**: English and Hebrew
 - **Last Tweet Date**: Sun Oct 19 12:24:22 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 24, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Active since 2011. Strong entrepreneurship track record with early start. Based in Tel Aviv 🇮🇱🇺🇸
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ## NEW DISCOVERIES - October 25, 2025 via X API Direct Search
 
 ### Developers & Engineers (Verified via X API)
 
-#### @Gavriel_Cohen (695 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @Gavriel_Cohen (693 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Gavriel Cohen
 - **Role**: Tech Communications & Startup Storytelling
 - **Focus**: Helping Tel Aviv's top tech startups tell their stories (AI, Dev, Quantum), Ex-Wix.com Dev, TAU Alum - Physics + CompSci
@@ -98,12 +98,12 @@
 - **Last Reply Date**: Sat Jun 21 14:39:12 +0000 2025
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Ex-Wix developer with TAU physics + CS degree. Focuses on AI, Dev tools, Quantum computing startups
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @Israelzzzzzzz (5,578 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @Israelzzzzzzz (5,576 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Israel
 - **Role**: Engineer, Entrepreneur, Web Developer
 - **Focus**: Engineering, entrepreneurship, web development
@@ -114,12 +114,12 @@
 - **Location**: Not specified
 - **Language**: English
 - **Last Tweet Date**: Thu Jun 27 14:08:51 +0000 2024
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created Jan 2020, 2,205 following. High tweet volume indicates strong community engagement
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @oriSomething (659 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -133,15 +133,15 @@
 - **Location**: World emoji (🌍)
 - **Language**: Primarily Hebrew with English tech terms
 - **Last Tweet Date**: Sat Oct 25 20:11:37 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Strong Hebrew language presence, technical humor, developer community insider. 195K favorites show high engagement
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @pythiccoder (1,657 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @pythiccoder (1,658 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Ari Bornstein
 - **Role**: NLP Research Engineer @Microsoft
 - **Focus**: NLP, AI/ML, Israeli Tech, Israeli Democracy. Ex-BIU NLP
@@ -155,14 +155,14 @@
 - **Last Reply Date**: Fri Mar 14 13:17:26 +0000 2025
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Active since Aug 2014, Microsoft research role, Bar Ilan University alumni, ribbon emoji (🎗️) in name
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ### Founders & Entrepreneurs (Verified via X API)
 
-#### @inbarmor (3,181 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @inbarmor (3,187 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Inbar Mor
 - **Role**: VP Sales & BD @shopxstores
 - **Focus**: Sales, Business Development, Investor Relations, Tel Aviv University Mentorship
@@ -176,12 +176,12 @@
 - **Last Reply Date**: Wed Oct 01 12:57:40 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: "Life in pink | Life in Tech" - unique personal branding. Created Dec 2011, ex-Airbnb connections, 745 following. Strong focus on vegan tech community
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @nelntz (782 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @nelntz (785 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: נלנץ (Nelntz)
 - **Role**: Development Lead in Startup
 - **Focus**: DATLASH (Data/Tech/Algo/Startup), Family, Startup life, Beer
@@ -191,16 +191,16 @@
 - **Profile URL**: https://twitter.com/nelntz
 - **Location**: Israel
 - **Language**: Primarily Hebrew
-- **Last Tweet Date**: Sat Oct 25 15:37:25 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Tweet Date**: Sun Oct 26 04:54:08 +0000 2025
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Bio: "חיפה במקור, תל אביב בהווה. מוביל פיתוח בסטארטאפ. אנחנו ננצח כי אנחנו טובים יותר, וכי אין לנו ברירה" (Haifa origin, Tel Aviv now. Lead dev in startup. We will win because we're better, and because we have no choice). 14,820 favorites shows high engagement
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @YaronTm (115 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @YaronTm (116 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Yaron Tamuz
 - **Role**: Product Designer
 - **Focus**: Product design in Tel Aviv tech scene
@@ -211,12 +211,12 @@
 - **Location**: Israel, Tel Aviv
 - **Language**: Hebrew
 - **Last Tweet Date**: Fri Oct 17 18:45:36 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Emoji in bio: 🤟. 2,263 favorites, 355 following
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ### Investors & VCs (Verified via X API)
@@ -231,13 +231,13 @@
 - **Profile URL**: https://twitter.com/KachlonKfir
 - **Location**: Israel
 - **Language**: English
-- **Last Tweet Date**: Sat Oct 25 20:01:33 +0000 2025
+- **Last Tweet Date**: Sun Oct 26 06:07:03 +0000 2025
 - **Last Reply Date**: Fri Oct 24 19:39:44 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: 501 following, wife-approved opinions (as stated in bio), very active engagement
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @eyalbino (1,753 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -251,12 +251,12 @@
 - **Location**: Not specified (operates between NYC and TLV)
 - **Language**: English
 - **Last Tweet Date**: Mon Oct 20 01:43:31 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: "Living and breathing NYC-TLV tech." 1,909 following
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ### Tech Journalists & Ecosystem (Verified via X API)
@@ -272,15 +272,15 @@
 - **Location**: Not specified (operates between UK and Tel Aviv)
 - **Language**: English
 - **Last Tweet Date**: Wed Dec 23 13:33:20 +0000 2020
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: "Views his mum's" - humorous disclaimer in bio. 325 following
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @marissalnew (798 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @marissalnew (797 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Marissa Newman
 - **Role**: Tech reporter, Tel Aviv @business (Bloomberg)
 - **Focus**: Israeli tech news coverage for Bloomberg
@@ -294,9 +294,9 @@
 - **Last Reply Date**: Tue Oct 17 14:30:11 +0000 2023
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Contact: Mnewman129@bloomberg.net. 1,046 following
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @AsafWien (631 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -310,17 +310,17 @@
 - **Location**: Israel
 - **Language**: English and Hebrew
 - **Last Tweet Date**: Sun Mar 02 18:02:05 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: 522 following, editor role provides media connections
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ### Community Builders & Ecosystem (Verified via X API)
 
-#### @NoaSe (571 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @NoaSe (570 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Noa Segre
 - **Role**: Israeli in Milan - Tech & Innovation Ecosystem Builder
 - **Focus**: Tech, innovation, ecosystem building, fundraising and social impact
@@ -331,12 +331,12 @@
 - **Location**: Milan, Italy (Israeli expat)
 - **Language**: English
 - **Last Tweet Date**: Sat May 17 20:25:25 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: 527 following, 219 media posts
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @WomenStartupNtn (343 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -353,9 +353,9 @@
 - **Last Reply Date**: Mon Nov 02 12:53:05 +0000 2020
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Community account, 141 following
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @michaelbrous (317 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -369,15 +369,15 @@
 - **Location**: Not specified
 - **Language**: English
 - **Last Tweet Date**: Mon Apr 07 03:42:08 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: 479 following, Melio is a successful Israeli fintech unicorn
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @michaelit (1,692 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @michaelit (1,691 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Michal Michaeli (מיכאל מיכאילי)
 - **Role**: Director, international economic development & Tel Aviv Tech
 - **Focus**: Tel Aviv tech ecosystem, economic development, feminism
@@ -391,9 +391,9 @@
 - **Last Reply Date**: Sat Oct 11 18:10:19 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: "ישראל ישראלי של הפמיניזם" (Israeli Israeli of feminism). 998 following, 3,052 media posts
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @YoelTheDog (529 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -407,15 +407,15 @@
 - **Location**: Tel Aviv, Israel
 - **Language**: English
 - **Last Tweet Date**: Mon Oct 02 20:13:27 +0000 2023
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: "f IDF K9" - former IDF K9 handler. 797 following
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @alexvs (1,337 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @alexvs (1,335 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Alex Pospekhov
 - **Role**: Serial tech-entrepreneur, Tel Aviv
 - **Focus**: ADHD Gonzo, Meanings & Mindset, entrepreneurship
@@ -426,17 +426,17 @@
 - **Location**: Tel Aviv 🇮🇱
 - **Language**: English
 - **Last Tweet Date**: Thu Jul 03 06:32:39 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. 1,235 following, 154 media posts. Strong personal brand around mindset and meanings
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ### Hebrew-Language Tech Voices (Verified via X API)
 
-#### @MichaelKarmon (1,363 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @MichaelKarmon (1,362 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Michael Karmon (🇮🇱Michael Karmon🇮🇱)
 - **Role**: Former Startup CEO and Cybersecurity Officer
 - **Focus**: Zionist and leftist perspectives, Israeli tech, cybersecurity
@@ -447,12 +447,12 @@
 - **Location**: אחוס"ל ציס-גנדר הטרו-נורמטיבי (complex Hebrew description)
 - **Language**: Primarily Hebrew
 - **Last Tweet Date**: Sat Oct 25 15:02:19 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Bio quotes: "אין טעם לעמוד דום בהמנון אם מישהו מנצל זאת כדי לכייס אותך" (Zeev Jabotinsky) and "טקטיקה ללא אסטרטגיה היא רק הרעש שלפני התבוסה" (Sun Tzu)
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ### Additional Hebrew Tech Profiles (Lower Follower Counts)
@@ -468,12 +468,12 @@
 - **Location**: Not specified
 - **Language**: Hebrew
 - **Last Tweet Date**: Fri Oct 24 20:34:09 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Small but engaged profile, uses humor about startup life
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @ZypySy (404 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -487,12 +487,12 @@
 - **Location**: Not specified
 - **Language**: Hebrew
 - **Last Tweet Date**: Sat Oct 25 05:17:20 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Bio: "לא סובלת בולשיט" (Doesn't tolerate BS). Mixed content focus
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @bullshit_sniper (244 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -509,9 +509,9 @@
 - **Last Reply Date**: Sat Oct 18 18:07:52 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Bio quote: "There are times when the world is rearranging itself, and at times like that, the right words can change the world."
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @charedilomatzuy (307 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -524,20 +524,20 @@
 - **Profile URL**: https://twitter.com/charedilomatzuy
 - **Location**: Not specified
 - **Language**: Hebrew
-- **Last Tweet Date**: Wed Oct 22 19:41:50 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Tweet Date**: Sat Oct 25 21:00:55 +0000 2025
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API Direct Search
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Bio: "רגיש ומתחשב, חכמולוג ושנון, נראה לי...🤔" (Sensitive and considerate, smart and witty, seems to me...)
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ## NEW DISCOVERIES - October 25, 2025 Session 2: Additional X API Search
 
 ### Developers & Engineers (Verified via X API)
 
-#### @4xmg (1,332 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @4xmg (1,331 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Mike Golan
 - **Role**: Founder & CTO at Aonline Israel
 - **Focus**: Computer Science, startup technology, Ph.D from Princeton
@@ -551,12 +551,12 @@
 - **Last Reply Date**: Wed Oct 22 10:33:30 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Princeton Ph.D, very active account with strong engagement
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @cyb3rl0gg3r (1,386 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @cyb3rl0gg3r (1,387 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: cyb3rl0gg3r - Security Automation Specialist
 - **Role**: Cybersecurity Engineer, MSSP SOAR/SIEM consultant for big tech
 - **Focus**: Cybersecurity, security automation, SOAR/SIEM, PSO
@@ -570,12 +570,12 @@
 - **Last Reply Date**: Wed Mar 30 00:12:23 +0000 2022
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created July 2019, MSSP consultant with hands-on security automation experience
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @ShaulB (593 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @ShaulB (595 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Shaul Behr
 - **Role**: Software Engineer, Rabbi, Author, Podcaster
 - **Focus**: Software engineering, Jewish thought, AI music, multi-faceted tech-spiritual perspective
@@ -589,9 +589,9 @@
 - **Last Reply Date**: Tue Oct 21 14:34:35 +0000 2025
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Website: shaulbehr.com. Remarkable personal story with kidney donation
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @olegtk (519 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -605,12 +605,12 @@
 - **Location**: Redmond, WA (formerly Israel)
 - **Language**: English
 - **Last Tweet Date**: Tue Oct 14 16:38:27 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Ukraine → Israel → US path, supporting Ukraine. Created Feb 2008
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @avorobey (591 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -627,12 +627,12 @@
 - **Last Reply Date**: Tue Sep 09 09:06:34 +0000 2025
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Website: avva.livejournal.com. Internet veteran since 1993
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @dudiSendler (2,336 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @dudiSendler (2,335 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Dudi Sendler
 - **Role**: Software Engineer BSc, Development Team Manager
 - **Focus**: Software engineering, team management, Israeli tech culture
@@ -643,12 +643,12 @@
 - **Location**: Israel
 - **Language**: Primarily Hebrew
 - **Last Tweet Date**: Fri Jul 25 17:59:11 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created May 2009. Strong engagement with 1,688 media posts
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @notarbut (1,772 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -662,17 +662,17 @@
 - **Location**: Israel
 - **Language**: Hebrew
 - **Last Tweet Date**: Mon Jan 29 12:56:57 +0000 2024
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Website: notarbut.co. Created Feb 2017. Co-hosts: @avietzioni @barnashon @galzellermayer
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ### Founders & Entrepreneurs (Verified via X API)
 
-#### @michaellacaplan (1,324 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @michaellacaplan (1,325 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Michaella Caplan
 - **Role**: Tech Founder, AI Product Development
 - **Focus**: Photography, tech founding, AI product development, startups, geopolitics, Israeli advocacy
@@ -683,15 +683,15 @@
 - **Location**: NYC / Hong Kong / Bali
 - **Language**: English
 - **Last Tweet Date**: Sat Oct 25 06:54:13 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Website: michaellacaplan.com. Created Sept 2013. International presence with Israeli roots
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @greta_yulish (1,203 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @greta_yulish (1,206 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Greta Yulish (גרטה יוליש)
 - **Role**: Founder @ Answer43
 - **Focus**: Scaling Israeli Tech, From Startup to Scale-Up Nation, Investment
@@ -702,15 +702,15 @@
 - **Location**: Tel Aviv, Israel
 - **Language**: Bilingual (Hebrew name in bio: גרטה יוליש)
 - **Last Tweet Date**: Thu Sep 11 04:14:49 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Website: answer43.com. "No DMs" policy. "Own views, always" disclaimer. Created Aug 2017
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @IGoytom (1,051 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @IGoytom (1,050 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Israel Goytom
 - **Role**: Co-founder and CTO @ Chapa
 - **Focus**: Fintech, CTO perspective, Ethiopian-Israeli tech entrepreneurship
@@ -721,15 +721,15 @@
 - **Location**: Who Cares? (Ethiopia/Israel connection)
 - **Language**: English
 - **Last Tweet Date**: Sun Oct 19 15:33:21 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created Sept 2016. "RTs ≠ Endorsements" disclaimer. @chapa_et is Ethiopian fintech
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @shlomilahyani (1,333 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @shlomilahyani (1,332 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: שלומי לחיאני (Shlomi Lahyani)
 - **Role**: Entrepreneur, Former Mayor of Bat Yam
 - **Focus**: Entrepreneurship, Israeli patriotism, civic leadership
@@ -743,12 +743,12 @@
 - **Last Reply Date**: Wed Jun 28 16:53:25 +0000 2023
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created April 2013. Bio: "יזם, פטריוט ישראלי, ראש עיריית בת ים לשעבר"
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @MatanYaffe (2,129 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @MatanYaffe (2,135 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: מתן יפה (Matan Yaffe)
 - **Role**: Entrepreneur, Civic Activist
 - **Focus**: Entrepreneurship, Israeli patriotism, Zionism, civic activism
@@ -762,12 +762,12 @@
 - **Last Reply Date**: Tue Sep 30 07:34:25 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Created Feb 2017. Bio: "המדינה הזו יכולה וצריכה להיות המדינה הכי טובה בעולם"
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @FotiLalcon (594 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @FotiLalcon (592 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Elf Loti
 - **Role**: Product Manager
 - **Focus**: Product management, Israeli tech
@@ -781,9 +781,9 @@
 - **Last Reply Date**: Sat Nov 09 11:32:51 +0000 2019
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created Nov 2011. Remarkably high tweet count (84K+) shows exceptional engagement. Website: ask.fm/LotiFalcon
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ### Investors & VCs (Verified via X API)
@@ -799,12 +799,12 @@
 - **Location**: Tel Aviv, Israel
 - **Language**: English
 - **Last Tweet Date**: Wed Aug 30 14:39:14 +0000 2023
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created Dec 2007. Website: lsvcapital.com. Hebrew University faculty connection
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ### Community Builders & Ecosystem (Verified via X API)
@@ -823,9 +823,9 @@
 - **Last Reply Date**: Thu Jan 26 20:33:05 +0000 2023
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Website: iconsv.org. Created Sept 2014. "A community of those who are passionate about Israeli Tech and Innovation"
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ## Discovery Session Notes - October 25, 2025
@@ -910,15 +910,15 @@
 - **Location**: Israel
 - **Language**: Hebrew
 - **Last Tweet Date**: Tue Oct 21 10:36:45 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created Dec 2016. Active in Hebrew tech discussions about data science and engineering practices
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @DorelMasasa (1,188 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @DorelMasasa (1,189 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Dorel Masasa
 - **Role**: Software Developer @ Fortinet
 - **Focus**: Software development, fitness and tech intersection, deployment processes
@@ -928,16 +928,16 @@
 - **Profile URL**: https://twitter.com/DorelMasasa
 - **Location**: Israel
 - **Language**: English
-- **Last Tweet Date**: Fri Oct 24 17:11:53 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Tweet Date**: Sun Oct 26 06:54:54 +0000 2025
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created Nov 2019. Very active with 51K+ tweets. Strong technical voice on practical development topics
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @neriya_fisch (9,032 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @neriya_fisch (9,041 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Neriya Fisch
 - **Role**: Software Engineer, History & Tech Writer
 - **Focus**: Programming, IDEs (PyCharm vs VSCode), team management in tech, history and tech crossovers
@@ -947,13 +947,13 @@
 - **Profile URL**: https://twitter.com/neriya_fisch
 - **Location**: Israel
 - **Language**: Hebrew
-- **Last Tweet Date**: Sat Oct 25 16:30:37 +0000 2025
+- **Last Tweet Date**: Sat Oct 25 20:54:19 +0000 2025
 - **Last Reply Date**: Fri Oct 24 11:03:28 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Created Jan 2024. Bio: "כותב על היסטוריה, אצולה אירופית וסתם סיפורים מגניבים" (Writes about history, European aristocracy and cool stories). Active in escapism community
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @abbabon (654 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -970,12 +970,12 @@
 - **Last Reply Date**: Thu Sep 04 14:01:12 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created Sept 2008. Long-term presence in Israeli tech scene with management insights
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @alonisser (1,793 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @alonisser (1,794 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Alon Nisser
 - **Role**: Tech Enthusiast & Programmer
 - **Focus**: Economics, politics, computers, programming, open source development
@@ -985,13 +985,13 @@
 - **Profile URL**: https://twitter.com/alonisser
 - **Location**: Israel
 - **Language**: Hebrew and English
-- **Last Tweet Date**: Sat Oct 25 15:44:37 +0000 2025
+- **Last Tweet Date**: Sun Oct 26 07:35:58 +0000 2025
 - **Last Reply Date**: Tue Oct 21 05:56:05 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created May 2010. Blogs in Hebrew at degeladom.wordpress.com. 30K+ tweets show high engagement
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @Fl0w21 (77 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1005,12 +1005,12 @@
 - **Location**: Free Palestine
 - **Language**: English
 - **Last Tweet Date**: Wed Oct 22 19:42:07 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created Oct 2012. Active in tech and social justice intersections
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @y_shif (1,622 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1027,9 +1027,9 @@
 - **Last Reply Date**: Sat Oct 25 08:34:24 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created July 2009. Bio in Hebrew about family life and tech. Very active with 61K+ tweets
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @ketacode (3,751 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1046,12 +1046,12 @@
 - **Last Reply Date**: Fri Oct 24 14:30:34 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Created Aug 2009. Website: berzniz.com. 11K+ tweets from CTO perspective
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @shaiyallin (2,472 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @shaiyallin (2,471 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Shai Yallin
 - **Role**: Software Gardener, Holistic Software Development Teacher
 - **Focus**: Holistic Software Development, Lean Growth, eliminating rigidity, creating flexibility
@@ -1061,16 +1061,16 @@
 - **Profile URL**: https://twitter.com/shaiyallin
 - **Location**: Tel Aviv, Israel
 - **Language**: Hebrew and English
-- **Last Tweet Date**: Sat Oct 25 06:52:05 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Tweet Date**: Sun Oct 26 05:34:26 +0000 2025
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Website: shaiyallin.com. Created Oct 2009. Also father, spouse, musician
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @shlomiatar (1,708 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @shlomiatar (1,710 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Shlomi Atar
 - **Role**: Former CEO of Smore (sold to PSG), Product Builder
 - **Focus**: Building products at X (Twitter), tech hacks, deployment tricks, shortcuts in development
@@ -1084,12 +1084,12 @@
 - **Last Reply Date**: Mon Oct 13 12:00:53 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Created Aug 2007. Sometimes takes photos. All opinions are his
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @oriashkenazi (368 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @oriashkenazi (369 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Ori Ashkenazi
 - **Role**: Tech Learning Enthusiast
 - **Focus**: Prompt engineering, code development, learning journey in tech
@@ -1100,15 +1100,15 @@
 - **Location**: Israel
 - **Language**: Hebrew
 - **Last Tweet Date**: Wed Oct 22 12:01:06 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created April 2009. Bio: "פה בשביל ללמוד על העולם, עליכם ועל עצמי" (Here to learn about the world, about you, and about myself)
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @Her_Yehuda (97 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @Her_Yehuda (98 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: H. Yehuda
 - **Role**: Tech Blogger, Developer Advocate
 - **Focus**: Technical blogging, developer advice, building portfolios, community building
@@ -1122,9 +1122,9 @@
 - **Last Reply Date**: Mon Oct 20 11:06:35 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created Jan 2024. Bio: "שברי לוחות" (Broken tablets). Active in developer community building
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ### Founders & Entrepreneurs (Grok Discovery + X API Verified)
@@ -1143,12 +1143,12 @@
 - **Last Reply Date**: Tue Dec 03 22:17:03 +0000 2024
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created April 2017. Building security platform to identify and neutralize vulnerabilities at Zafran
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @the_lightheart (1,634 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @the_lightheart (1,635 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Or Lev-Cohen
 - **Role**: Founder @ Trophy.inc
 - **Focus**: Digital projects and services for startups, entrepreneurship journey
@@ -1162,9 +1162,9 @@
 - **Last Reply Date**: Tue Oct 21 05:37:07 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Created Sept 2021. Bio quote: "Whether you think you can, or you think you can't -- you're right"
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @DanielleDafni (40 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1181,12 +1181,12 @@
 - **Last Reply Date**: Mon May 26 16:00:09 +0000 2025
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created Dec 2021. Website: peech-ai.com. Sharing what it really takes to build
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @orslimy (6,858 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @orslimy (6,862 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Or Azulay
 - **Role**: Co-Founder & CPO @ Prysmic AI
 - **Focus**: AI for commerce and operations (ERP integrations), startup diary, GTM strategies
@@ -1196,16 +1196,16 @@
 - **Profile URL**: https://twitter.com/orslimy
 - **Location**: Israel (bio: "Never miss my events")
 - **Language**: English
-- **Last Tweet Date**: Fri Oct 24 09:23:12 +0000 2025
+- **Last Tweet Date**: Sun Oct 26 06:59:59 +0000 2025
 - **Last Reply Date**: Thu Oct 23 09:15:03 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Created March 2015. Very active with 21K+ tweets. Host of Specks of Light podcast
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @elad_itzhakian (7,506 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @elad_itzhakian (7,505 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Elad Itzhakian
 - **Role**: Head of R&D @ BriyaHealth, Founder @ tillmidnighttlv, Host @ mayeshbeze podcast
 - **Focus**: Healthcare data exchange network with blockchain, R&D leadership, Tel Aviv tech scene
@@ -1215,16 +1215,16 @@
 - **Profile URL**: https://twitter.com/elad_itzhakian
 - **Location**: 03 (Tel Aviv area code)
 - **Language**: English
-- **Last Tweet Date**: Sat Oct 25 18:10:27 +0000 2025
+- **Last Tweet Date**: Sun Oct 26 06:17:52 +0000 2025
 - **Last Reply Date**: Fri Oct 24 07:15:05 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Website: elad.itzhakian.com. Created June 2010. Very active with 80K+ tweets
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @yaeli_chief (6,829 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @yaeli_chief (6,836 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: יעלי (Yaeli)
 - **Role**: Founder, Content Creator, Tech & Creative Professional
 - **Focus**: Content creation, scripts, creative work, hi-tech, tech ventures
@@ -1238,12 +1238,12 @@
 - **Last Reply Date**: Thu Sep 04 19:17:09 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Created Jan 2022. Bio includes diverse interests: writing, scripts, creative, hi-tech, OCD, music, poker
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @shemag8 (9,682 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @shemag8 (9,684 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Shem Magnezi
 - **Role**: CTO @ TryWilco
 - **Focus**: Tech education and development platform, R&D team building, startup management
@@ -1257,9 +1257,9 @@
 - **Last Reply Date**: Tue Oct 21 15:04:37 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Website: blog.shem.dev. Created Aug 2012. Very active with 55K+ tweets. Pinned tweet from 2016
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @WaveGodAI (417 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1272,16 +1272,16 @@
 - **Profile URL**: https://twitter.com/WaveGodAI
 - **Location**: Israel
 - **Language**: English
-- **Last Tweet Date**: Sat Oct 25 16:31:59 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Tweet Date**: Sun Oct 26 08:24:49 +0000 2025
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Created Jan 2025 (very new profile). Building AI trading journal from scratch
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @taltimes2 (6,182 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @taltimes2 (6,188 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: התלתל (Hataltal)
 - **Role**: Tech Founder, Entrepreneur
 - **Focus**: Starting ventures from scratch, building tech ventures, bootstrapping
@@ -1291,16 +1291,16 @@
 - **Profile URL**: https://twitter.com/taltimes2
 - **Location**: בני ברק (Bnei Brak)
 - **Language**: Hebrew
-- **Last Tweet Date**: Sat Oct 25 17:30:19 +0000 2025
+- **Last Tweet Date**: Sun Oct 26 07:55:31 +0000 2025
 - **Last Reply Date**: Sat Oct 18 07:02:43 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Created May 2021. Very active with 24K+ tweets
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @ido_yaakov (64 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @ido_yaakov (63 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Ido Yaakov
 - **Role**: Project Manager, Co-founder @ Omnis
 - **Focus**: Product management, user experience, digital house of projects
@@ -1314,12 +1314,12 @@
 - **Last Reply Date**: Thu Oct 23 05:23:01 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created Dec 2017. Co-founder at Omnis, digital house of projects
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @amosbarjoseph (280 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @amosbarjoseph (281 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Amos Bar Joseph
 - **Role**: CEO @ Swan.ai
 - **Focus**: Building The Human-First Movement, AI Agents for GTM Teams
@@ -1333,9 +1333,9 @@
 - **Last Reply Date**: Sat Feb 22 18:25:07 +0000 2025
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Website: getswan.com. Created Jan 2021
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @LironeGlikman (1,294 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1349,12 +1349,12 @@
 - **Location**: Israel
 - **Language**: English
 - **Last Tweet Date**: Thu Sep 04 14:20:11 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Website: LironeGlikman.com. Created March 2012. Biz Dev focus
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @YoavVilner (5,730 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1371,12 +1371,12 @@
 - **Last Reply Date**: Mon Oct 02 18:29:29 +0000 2023
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Created March 2012. Self-describes as "a lame person overall" (humor)
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @Shvartsbroit (2,696 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @Shvartsbroit (2,698 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Shimon Shvartsbroit
 - **Role**: Founder @ App51.ai, Ex CEO @ Oinc Protocol (L1)
 - **Focus**: Reinventing mobile app creation, blockchain/L1 experience, ex-demoscene, ex-Wix
@@ -1390,12 +1390,12 @@
 - **Last Reply Date**: Sun Oct 12 13:38:10 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Created May 2008. LinkedIn: linkedin.com/in/shimon-shvartsbroit-825ab53. Very active with 29K+ tweets
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @shilomagen (5,371 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @shilomagen (5,370 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Shilo Magen
 - **Role**: VP of R&D @ Riverside.fm, Builder by Heart
 - **Focus**: R&D leadership, building products, tech management, decent cook, campfire guitarist
@@ -1409,12 +1409,12 @@
 - **Last Reply Date**: Mon Sep 01 06:02:59 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Created March 2010. Also acro pilot. Unique combination of technical and creative interests
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @alonlif (8,256 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @alonlif (8,254 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Lifshitz, Tech Investor
 - **Role**: GP in 9 funds, Tech Investor (VC & PE)
 - **Focus**: Tech investing, startup meetings, fundraising, Israeli tech ecosystem
@@ -1425,12 +1425,12 @@
 - **Location**: Tel Aviv, NY, London
 - **Language**: English
 - **Last Tweet Date**: Thu Oct 23 22:43:46 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Created Dec 2010. Personal views. Very active with 19K+ tweets. International presence
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ### Product Managers & Designers (Grok Discovery + X API Verified)
@@ -1446,12 +1446,12 @@
 - **Location**: Remote
 - **Language**: English
 - **Last Tweet Date**: Sat Oct 25 17:28:22 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Website: linktr.ee/israelogundiran. Created March 2020. Active freelancer with portfolio
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @sagishrieber (3,223 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1468,9 +1468,9 @@
 - **Last Reply Date**: Tue Dec 24 21:08:09 +0000 2024
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Website: sagishrieber.com/IG. Created Jan 2010. Father x 3 & Entrepreneur. Host @ The Commit First Podcast
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @RoyAlbeckDesign (2,200 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1487,9 +1487,9 @@
 - **Last Reply Date**: Tue Jul 15 14:00:26 +0000 2025
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Website: royalbeck.design. Created June 2011. Mentoring focus is valuable for designer community
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @natiberk (172 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1503,12 +1503,12 @@
 - **Location**: Herzliya, Israel
 - **Language**: English
 - **Last Tweet Date**: Thu Jul 18 17:31:30 +0000 2024
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Website: effectiveproductmanagement.com. Created Sept 2009. Has professional PM account: @pmeffective
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @eyal_zuri (3,240 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1522,12 +1522,12 @@
 - **Location**: Israel
 - **Language**: English
 - **Last Tweet Date**: Wed Oct 22 07:13:36 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Website: muz.li. Created Dec 2008. Muzli is well-known in design community
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @zivtzi (2,699 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1544,9 +1544,9 @@
 - **Last Reply Date**: Sat Aug 19 18:47:00 +0000 2023
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Created Jan 2008. Co-Founder at Simple Happy Kitchen (@simplehappykchn) and Hello Heart (@HelloHeartApp), Ex-eBay
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @boazrossano (282 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1560,12 +1560,12 @@
 - **Location**: Israel
 - **Language**: English
 - **Last Tweet Date**: Tue Aug 26 13:53:03 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Website: 2cents.co.il. Created Jan 2009. Lectures on UX and design topics
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @dray_ilan (1,465 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1578,13 +1578,13 @@
 - **Profile URL**: https://twitter.com/dray_ilan
 - **Location**: Israel
 - **Language**: English
-- **Last Tweet Date**: Sat Oct 25 09:08:18 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Tweet Date**: Sun Oct 26 07:17:51 +0000 2025
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Website: FusionExperience.design. Created Sept 2015. Very active with 18K+ tweets. Unique cultural mix
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ## Session 3 Summary - October 25, 2025
@@ -1626,7 +1626,7 @@
 
 ### Additional Developers & Engineers (Grok Discovery + X API Verified - Session 3 Continued)
 
-#### @MotiWolff (103 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @MotiWolff (104 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Moti Wolff
 - **Role**: Fullstack Developer
 - **Focus**: Full stack development, software engineering, Israeli tech
@@ -1637,12 +1637,12 @@
 - **Location**: Kfar Chabad, Israel
 - **Language**: English
 - **Last Tweet Date**: Fri Oct 24 11:19:26 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Active since 2009. Small but engaged following in fullstack development
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @StavBarak (677 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1659,12 +1659,12 @@
 - **Last Reply Date**: Fri Sep 12 06:46:57 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Active web developer with growing engagement
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @EYRosensweig (1,019 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @EYRosensweig (1,022 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Ezra Yehoshua Rosensweig
 - **Role**: PhD Computer Science, Podcaster
 - **Focus**: Computer science research, podcasting, tech education
@@ -1678,12 +1678,12 @@
 - **Last Reply Date**: Fri Oct 17 06:45:10 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. PhD-level CS expertise with public engagement through podcasting
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @MozYossi48495 (145 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @MozYossi48495 (147 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Yossi Moz
 - **Role**: Software Developer
 - **Focus**: Software development, programming practices
@@ -1693,13 +1693,13 @@
 - **Profile URL**: https://twitter.com/MozYossi48495
 - **Location**: Israel
 - **Language**: English
-- **Last Tweet Date**: Sat Oct 25 20:01:26 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Tweet Date**: Sat Oct 25 22:48:48 +0000 2025
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Smaller following but relevant tech voice
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @HaLeiVi (151 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1713,15 +1713,15 @@
 - **Location**: Israel
 - **Language**: English and Hebrew
 - **Last Tweet Date**: Sun Aug 31 20:18:58 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Represents important demographic in Israeli tech - religious community members transitioning to tech
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
-#### @guywiener (4,466 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @guywiener (4,469 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Guy Wiener
 - **Role**: 10X Programmer, Data Scientist
 - **Focus**: Data science, advanced programming, algorithmic thinking
@@ -1731,13 +1731,13 @@
 - **Profile URL**: https://twitter.com/guywiener
 - **Location**: Israel
 - **Language**: English
-- **Last Tweet Date**: Sat Oct 25 11:01:14 +0000 2025
+- **Last Tweet Date**: Sun Oct 26 06:15:31 +0000 2025
 - **Last Reply Date**: Fri Oct 24 09:44:15 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Strong data science perspective with programming depth
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ### Business & Product Leadership (Grok Discovery + X API Verified - Session 3 Continued)
@@ -1756,9 +1756,9 @@
 - **Last Reply Date**: Tue Oct 21 16:58:06 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Lemonade is one of Israel's most successful tech companies
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @OmerAlali7 (6,968 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1775,9 +1775,9 @@
 - **Last Reply Date**: Thu Oct 16 19:53:01 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Defense-tech is major sector in Israeli tech ecosystem but rarely represented
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 **Total Tracker Count**: 81 verified nano-influencers (73 previous + 8 new)
@@ -1786,7 +1786,7 @@
 
 ### Additional Product Managers & Designers (Grok Discovery + X API Verified - Session 4)
 
-#### @deiner (307 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @deiner (306 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Erik Deiner
 - **Role**: Designer
 - **Focus**: Design, creative work, Tel Aviv design scene
@@ -1797,12 +1797,12 @@
 - **Location**: Tel Aviv, Israel
 - **Language**: English
 - **Last Tweet Date**: Wed Sep 13 12:06:41 +0000 2017
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Blue verified. Active since 2009. Website: tel-aviv based designer
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @leonidjack (120 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1816,12 +1816,12 @@
 - **Location**: Israel
 - **Language**: English
 - **Last Tweet Date**: Wed Mar 11 01:03:54 +0000 2020
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Website: jacksdesign.net. Active since 2011. GetNexar is AI-powered dashcam company
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @dainareed (371 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1835,12 +1835,12 @@
 - **Location**: Tel Aviv
 - **Language**: English
 - **Last Tweet Date**: Mon Jul 11 22:30:21 +0000 2022
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Website: dainareed.com. Active since 2008. "Web Design is my first love"
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 ### Community Builders & Ecosystem (Grok Discovery + X API Verified - Session 4)
@@ -1856,12 +1856,12 @@
 - **Location**: Israel
 - **Language**: English
 - **Last Tweet Date**: Fri Jul 18 19:01:59 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Active since 2009. Israel/Brasil background. Samsung Galaxy S21 FE user
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 #### @ravidor (1,224 Followers) ✓ VERIFIED NANO-INFLUENCER
@@ -1874,13 +1874,13 @@
 - **Profile URL**: https://twitter.com/ravidor
 - **Location**: Israel, Herzliya
 - **Language**: English
-- **Last Tweet Date**: Tue Oct 14 03:29:22 +0000 2025
-- **Last Reply Date**: N/A
+- **Last Tweet Date**: Sun Oct 26 04:29:00 +0000 2025
+- **Last Reply Date**: None
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Website: about.me/ravidor. Active since 2006. Bio: "My opinions are mine."
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 **Total Tracker Count**: 86 verified nano-influencers (81 previous + 5 new)
@@ -1889,7 +1889,7 @@
 
 ### Additional Developers & Engineers (X API Search + Validation - Session 4)
 
-#### @O_Magger (970 Followers) ✓ VERIFIED NANO-INFLUENCER
+#### @O_Magger (971 Followers) ✓ VERIFIED NANO-INFLUENCER
 - **Name**: Oded Magger
 - **Role**: Programmer (מתכנתת), Writer
 - **Focus**: Programming, hi-tech, writing, children's literature, tech culture
@@ -1903,9 +1903,9 @@
 - **Last Reply Date**: Sat Oct 18 21:09:04 +0000 2025
 - **Hebrew Writer**: Yes
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Hebrew Search Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Active since 2020. Bio: "Programmer. There will be tweets about basketball, hi-tech, writing, kids and progress/hope. #עודד_כותב_מדב"
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 **Total Tracker Count**: 87 verified nano-influencers (86 previous + 1 new)
@@ -2138,12 +2138,12 @@
 - **Location**: Israel
 - **Language**: English
 - **Last Tweet Date**: Sat Mar 12 10:13:09 +0000 2022
-- **Last Reply Date**: N/A
+- **Last Reply Date**: None
 - **Hebrew Writer**: No
 - **Added**: October 25, 2025
-- **Last Verified**: October 25, 2025 via X API (Grok Discovery)
+- **Last Verified**: October 26, 2025 via X API
 - **Notes**: Active since 2009. Website: mauricehason.com. 22+ years of design experience
-
+<!-- ✓ Last verified: 2025-10-26 -->
 ---
 
 **Total Tracker Count**: 99 verified nano-influencers (87 previous + 12 new)
