@@ -14,7 +14,10 @@ CREATE TABLE IF NOT EXISTS influencers (
     profile_url TEXT,
     location TEXT,
     language TEXT,
-    follower_count INTEGER,
+    followers INTEGER,
+    following INTEGER,
+    statuses_count INTEGER,
+    media_count INTEGER,
     last_tweet_date TEXT,  -- Stored as ISO 8601 string or original Twitter format
     last_reply_date TEXT,  -- Stored as ISO 8601 string or original Twitter format
     hebrew_writer BOOLEAN DEFAULT 0,
@@ -31,7 +34,7 @@ CREATE TABLE IF NOT EXISTS influencers (
 -- Indexes for common queries
 CREATE INDEX IF NOT EXISTS idx_influencers_location ON influencers(location);
 CREATE INDEX IF NOT EXISTS idx_influencers_hebrew_writer ON influencers(hebrew_writer);
-CREATE INDEX IF NOT EXISTS idx_influencers_follower_count ON influencers(follower_count);
+CREATE INDEX IF NOT EXISTS idx_influencers_followers ON influencers(followers);
 CREATE INDEX IF NOT EXISTS idx_influencers_excluded ON influencers(excluded);
 
 -- Trigger to update updated_at timestamp
