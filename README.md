@@ -167,7 +167,7 @@ Data synchronization agent for maintaining accuracy of the influencer database.
 │   │       └── src/
 │   │           └── grok.py                     # Grok API client
 │   └── settings.local.json
-├── influencers.db                               # SQLite database (78 active + 15 excluded)
+├── influencers.db                               # SQLite database
 ├── pyproject.toml                               # Python project config
 └── uv.lock                                      # Dependency lock file
 ```
