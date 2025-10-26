@@ -117,11 +117,6 @@ python3 grok.py "Explain AI" --disable-all-tools
 
 ## Requirements
 
-- Python virtual environment (`.venv`)
-- `xai-sdk>=1.3.1`
-- `python-dotenv>=1.1.1`
-- `typer` - Modern CLI framework
-- `typing_extensions` - For Annotated type hints
 - XAI_API_KEY environment variable in project's .env file
 
 ## How It Works

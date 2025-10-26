@@ -16,13 +16,6 @@ A simple SQLite database with direct SQL query access for managing Israeli tech 
 - **Auto-initialization**: Database created automatically on first use
 - **Flexible**: Agents can craft any query they need
 
-## Setup
-
-```bash
-cd .claude/skills/influencer-db
-pip install -r requirements.txt
-```
-
 ## Database Schema
 
 ### Tables
