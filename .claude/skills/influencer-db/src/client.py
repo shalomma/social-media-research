@@ -5,6 +5,8 @@ Provides direct SQL query access and schema inspection.
 """
 
 import json
+import os
+import re
 import sqlite3
 from pathlib import Path
 from typing import Optional
@@ -13,6 +15,9 @@ import typer
 
 # Create Typer app
 app = typer.Typer(help="Israeli Tech Nano-Influencers Database - Simple SQL Interface")
+
+# Safety mode - set to False to allow destructive operations
+SAFE_MODE = os.environ.get("DB_SAFE_MODE", "true").lower() == "true"
 
 # Database path relative to project root
 # From: .claude/skills/influencer-db/src/client.py
@@ -43,13 +48,61 @@ def initialize_database(db_path: Path):
         conn.commit()
 
 
+def validate_sql_safety(sql: str) -> tuple[bool, str]:
+    """
+    Validate SQL query for safety in safe mode.
+    Returns (is_safe, error_message).
+
+    Blocks:
+    - DROP (TABLE, INDEX, VIEW, TRIGGER)
+    - TRUNCATE
+    - DELETE without WHERE clause
+    - ALTER TABLE DROP
+
+    Allows:
+    - SELECT
+    - INSERT
+    - UPDATE (with or without WHERE)
+    - DELETE with WHERE clause
+    - ALTER TABLE ADD
+    """
+    if not SAFE_MODE:
+        return True, ""
+
+    # Normalize SQL for analysis (remove extra whitespace, make uppercase)
+    normalized = re.sub(r'\s+', ' ', sql.strip().upper())
+
+    # Block DROP commands
+    if re.match(r'^DROP\s+(TABLE|INDEX|VIEW|TRIGGER)', normalized):
+        return False, "DROP commands are blocked in safe mode. Set DB_SAFE_MODE=false to allow."
+
+    # Block TRUNCATE
+    if normalized.startswith('TRUNCATE'):
+        return False, "TRUNCATE commands are blocked in safe mode. Set DB_SAFE_MODE=false to allow."
+
+    # Block DELETE without WHERE clause
+    if re.match(r'^DELETE\s+FROM\s+\w+\s*$', normalized) or \
+       re.match(r'^DELETE\s+FROM\s+\w+\s*;', normalized):
+        return False, "DELETE without WHERE clause is blocked in safe mode. Add a WHERE clause or set DB_SAFE_MODE=false."
+
+    # Block ALTER TABLE DROP
+    if re.match(r'^ALTER\s+TABLE.*DROP', normalized):
+        return False, "ALTER TABLE DROP is blocked in safe mode. Set DB_SAFE_MODE=false to allow."
+
+    return True, ""
+
+
 @app.command()
 def query(
     sql: str = typer.Argument(..., help="SQL query to execute"),
     params: Optional[str] = typer.Option(None, "--params", "-p", help="JSON array of query parameters"),
+    unsafe: bool = typer.Option(False, "--unsafe", help="Disable safe mode for this query"),
 ):
     """
     Execute a SQL query and return results as JSON.
+
+    Safe mode is ENABLED by default, blocking: DROP, TRUNCATE, DELETE without WHERE.
+    To disable: use --unsafe flag or set DB_SAFE_MODE=false environment variable.
 
     Examples:
 
@@ -81,6 +134,15 @@ def query(
     python3 client.py query "SELECT location, COUNT(*) as count FROM influencers GROUP BY location"
     """
     try:
+        # Validate SQL safety in safe mode (unless --unsafe flag is used)
+        if not unsafe:
+            is_safe, error_msg = validate_sql_safety(sql)
+            if not is_safe:
+                typer.secho(f"⚠️  {error_msg}", fg=typer.colors.RED, err=True)
+                raise typer.Exit(1)
+        elif SAFE_MODE:
+            typer.secho("⚠️  Running in unsafe mode for this query...", fg=typer.colors.YELLOW)
+
         # Parse parameters if provided
         query_params = []
         if params:
@@ -117,7 +179,7 @@ def query(
 
 @app.command()
 def schema(
-    table: Optional[str] = typer.Argument(None, help="Specific table name (influencers or excluded_influencers)"),
+    table: Optional[str] = typer.Argument(None, help="Specific table name (influencers)"),
 ):
     """
     Show database schema information.
@@ -131,7 +193,6 @@ def schema(
     \b
     # Show schema for specific table
     python3 client.py schema influencers
-    python3 client.py schema excluded_influencers
     """
     try:
         with get_connection() as conn:
