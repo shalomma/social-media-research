@@ -1,6 +1,6 @@
 ---
 name: x-api
-description: Unified Twitter/X API client for retrieving user info, timelines, tweets, and replies via RapidAPI. Supports user lookup, timeline retrieval, tweet search, and reply fetching with a clean Typer-based CLI and agent-friendly Python interface.
+description: Unified Twitter/X API client for retrieving user info, tweets, and replies via RapidAPI. Supports user lookup, tweet search, and reply fetching with a clean Typer-based CLI and agent-friendly Python interface.
 ---
 
 # X (Twitter) API Skill via RapidAPI
@@ -11,20 +11,20 @@ A unified Twitter/X API client providing access to multiple endpoints through Ra
 
 The unified client (`.claude/skills/x-api/src/client.py`) provides four subcommands with beautiful, rich-formatted output.
 
-### 1. Get User Timeline
+### 1. Get User Info
 
-Retrieve a user's timeline (tweets) by screen name. Returns a structured response with user information and the date of the most recent tweet.
+Retrieve user information by screen name. Returns a structured response with user information and the date of the most recent tweet.
 
 ```bash
-python3 client.py timeline <screenname>
+python3 client.py userinfo <screenname>
 
 # Example:
-python3 client.py timeline elonmusk
+python3 client.py userinfo elonmusk
 ```
 
 **Response Format:**
 
-The timeline command returns a `UserTimelineResponse` Pydantic model with the following structure:
+The userinfo command returns a `UserInfoResponse` Pydantic model with the following structure:
 
 ```json
 {
@@ -153,7 +153,7 @@ python3 client.py search "from:NASA filter:images since:2025-01-01"
 
 ## Common Use Cases
 
-- **Research**: Retrieve and analyze user timelines, search for specific topics
+- **Research**: Retrieve and analyze user information, search for specific topics
 - **Data Collection**: Gather tweets, replies, and user information for analysis
 - **Validation**: Verify Twitter usernames or number of followers
 - **Engagement Analysis**: Analyze replies and interactions on specific tweets

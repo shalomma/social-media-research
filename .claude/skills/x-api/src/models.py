@@ -2,8 +2,8 @@ from typing import Optional, Any
 from pydantic import BaseModel
 
 
-class UserTimelineResponse(BaseModel):
-    """Response model for user timeline with calculated fields."""
+class UserInfoResponse(BaseModel):
+    """Response model for user info with calculated fields."""
     status: str
     profile: str
     blue_verified: bool

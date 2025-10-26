@@ -10,7 +10,7 @@ import typer
 import requests
 from dotenv import load_dotenv
 
-from models import UserTimelineResponse, SearchResponse, SearchTweet
+from models import UserInfoResponse, SearchResponse, SearchTweet
 
 load_dotenv()
 
@@ -61,15 +61,15 @@ class TwitterAPIClient:
 
         return response.json()
 
-    def get_user_timeline(self, screenname: str) -> UserTimelineResponse:
+    def get_user_info(self, screenname: str) -> UserInfoResponse:
         """
-        Retrieve a user's timeline (tweets) by screen name.
+        Retrieve user information by screen name.
 
         Args:
             screenname: Twitter username (without @)
 
         Returns:
-            UserTimelineResponse: User info with calculated fields
+            UserInfoResponse: User info with calculated fields
 
         Raises:
             requests.exceptions.RequestException: If API request fails
@@ -112,7 +112,7 @@ class TwitterAPIClient:
 
         # Create and return Pydantic model
         # Map API field names to our model field names
-        return UserTimelineResponse(
+        return UserInfoResponse(
             status=user_data["status"],
             profile=user_data["profile"],
             blue_verified=user_data["blue_verified"],
@@ -180,13 +180,13 @@ app = typer.Typer(help="Twitter API client for RapidAPI endpoints")
 
 
 @app.command()
-def timeline(
+def userinfo(
     screenname: str = typer.Argument(..., help="Twitter username (without @)")
 ):
-    """Get user's timeline (tweets)"""
+    """Get user information"""
     try:
         client = TwitterAPIClient()
-        result = client.get_user_timeline(screenname)
+        result = client.get_user_info(screenname)
         typer.echo(json.dumps(result.model_dump(), indent=2))
     except ValueError as e:
         typer.secho(f"Configuration Error: {e}", fg=typer.colors.RED, err=True)
