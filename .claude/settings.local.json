@@ -8,19 +8,13 @@
       "Read",
       "Skill(xai-grok)",
       "Skill(x-api)",
-      "Bash(source:*)",
-      "Bash(python:*)",
-      "Bash(chmod:*)",
-      "Bash(git:*)",
-      "Bash(pip:*)",
-      "Bash(python3:*)",
-      "Bash(echo:*)",
-      "Bash(cat:*)",
-      "mcp__chrome-devtools",
-      "Bash(/usr/bin/python3:*)"
+      "Bash",
+      "mcp__chrome-devtools"
     ],
     "deny": [],
-    "ask": []
+    "ask": [
+      "Bash(rm:*)"
+    ]
   },
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
