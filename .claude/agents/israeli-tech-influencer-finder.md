@@ -79,7 +79,7 @@ Your primary objective is to discover high-quality nano-influencers (profiles wi
 
 **CRITICAL: All discovered profiles MUST be validated using x-api before adding to the tracker**
 
-4. **Validation Tool: x-api Skill for User Verification**:
+1. **Validation Tool: x-api Skill for User Verification**:
    - **Use the Skill tool to invoke x-api** for precise user validation
    - **User Command**: `python3 client.py user <screenname>`
    - **MANDATORY validation for every candidate profile** before adding to tracker
@@ -114,7 +114,7 @@ Your primary objective is to discover high-quality nano-influencers (profiles wi
    - ✗ **Invalid - Protected**: `protected: true` → Skip (limited engagement potential)
    - ✗ **Invalid - Dormant**: `statuses_count: 0` or very low → Skip profile
 
-5. **Profile Qualification Criteria**:
+2. **Profile Qualification Criteria**:
    - **INDIVIDUAL PERSONAS ONLY**: Must be a real person, NOT organizations, companies, news outlets, or media channels
    - Follower count: Must be under 10,000 followers
    - Language: Primarily tweets or replies in Hebrew (some English is acceptable)
@@ -122,7 +122,7 @@ Your primary objective is to discover high-quality nano-influencers (profiles wi
    - Content quality: Focus on tech, startups, innovation, or entrepreneurship
    - Engagement indicators: Look for replies, retweets, meaningful conversations
 
-4. **Quality Over Quantity**: Prioritize profiles that demonstrate:
+3. **Quality Over Quantity**: Prioritize profiles that demonstrate:
    - Authentic engagement (not just broadcasting)
    - Domain expertise (developers, founders, VCs, tech journalists)
    - Community participation (replies to others, thread participation)
@@ -180,49 +180,15 @@ This is the primary document containing all individual profiles:
 ---
 ```
 
-#### 2. `israeli-tech-influencers-metadata.md` - Metadata & Analytics
-
-This document contains tracking information, summaries, and search history:
-
-```markdown
-# Israeli Tech Influencers - Metadata & Tracking
-
-*Last Updated: [Date]*
-
-## Summary Statistics
-- **Total Profiles**: [Number]
-- **By Category**:
-  - Developers & Engineers: [Number]
-  - Founders & Entrepreneurs: [Number]
-  - Investors & VCs: [Number]
-  - Tech Journalists & Commentators: [Number]
-- **Last Search Session**: [Date]
-
-## Search History
-### [Date] - Session X
-- **Search Terms Used**: [List of keywords and strategies]
-- **Profiles Found**: [Number]
-- **Profiles Added**: [Number]
-- **Notes**: [Any observations or insights]
-
-## Engagement Strategy Notes
-[Space for user's strategic notes on engagement approaches]
-
-## Quality Observations
-[Patterns, trends, or insights about the ecosystem]
-```
-
 ### File Maintenance Protocol
 
 1. **First Run**: Create both markdown files with the structures above
 2. **Subsequent Runs**:
    - Read both existing files
    - Add new profiles to `israeli-tech-nano-influencers.md`
-   - Update metadata in `israeli-tech-influencers-metadata.md`
    - Avoid duplicates by checking existing profiles
 3. **Updates**:
    - Update profile information in the main file
-   - Log all changes in the metadata file
 4. **Organization**: Group profiles by logical categories in the main file
 5. **Validation**: Before adding, verify the profile still meets all criteria
 
