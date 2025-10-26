@@ -16,7 +16,7 @@ import typer
 # Create Typer app
 app = typer.Typer(help="Israeli Tech Nano-Influencers Database - Simple SQL Interface")
 
-# Safety mode - set to False to allow destructive operations
+# Safety mode - False to allow destructive operations
 SAFE_MODE = os.environ.get("DB_SAFE_MODE", "true").lower() == "true"
 
 # Database path relative to project root
@@ -87,7 +87,7 @@ def validate_sql_safety(sql: str) -> tuple[bool, str]:
 
     # Block ALTER TABLE DROP
     if re.match(r'^ALTER\s+TABLE.*DROP', normalized):
-        return False, "ALTER TABLE DROP is blocked in safe mode. Set DB_SAFE_MODE=false to allow."
+        return False, "TABLE DROP is blocked in safe mode. Set DB_SAFE_MODE=false to allow."
 
     return True, ""
 
