@@ -11,7 +11,6 @@ A SQLite database with direct sqlite3 command-line access for managing Israeli t
 
 - **Direct sqlite3 Access**: Execute any SQL query using the sqlite3 CLI
 - **Schema Inspection**: View database schema and table structures
-- **JSON Output**: Results can be returned as JSON with `.mode json`
 - **Flexible**: Craft any query you need with full SQL power
 - **Version Controlled**: Database file is tracked in git for easy collaboration
 
@@ -47,7 +46,8 @@ A SQLite database with direct sqlite3 command-line access for managing Israeli t
 - `media_count` (INTEGER) - Total media items posted
 
 **Discovery & Tracking:**
-- `discovery_path` (TEXT) - How the influencer was discovered (web search query, website URL, referral path, etc.)
+- `discovery_path` (TEXT) - How the influencer was discovered/found (e.g., web search query, xai-grok search, website URL, referral path, Twitter list, recommendation from another influencer, etc.)
+- `rationale` (TEXT) - Why this influencer was added to the database (e.g., specific expertise, notable projects, unique perspective, community influence, content quality, etc.)
 - `added_date` (TEXT NOT NULL) - Date added to database (ISO 8601 format)
 - `last_verified_date` (TEXT) - Date profile was last verified (ISO 8601 format)
 
@@ -141,20 +141,6 @@ sqlite3 influencers.db "UPDATE influencers SET followers = 2500, following = 600
 sqlite3 influencers.db "DELETE FROM influencers WHERE twitter_handle = 'test_user'"
 ```
 
-## Database Location
-
-```
-/influencers.db
-```
-
-**The database file IS version controlled in git.** Unlike typical databases, this SQLite file is treated as a data file (similar to the markdown files it replaces). This provides:
-- Version history of influencer data
-- Easy collaboration and cloning
-- Automatic backup through git
-- Change tracking over time
-
-Since it's a small, curated dataset (not a high-frequency transactional database), this approach works well.
-
 ## Architecture
 
 ```
@@ -162,19 +148,13 @@ Since it's a small, curated dataset (not a high-frequency transactional database
 ├── SKILL.md              # This documentation
 └── src/
     └── schema.sql       # Database schema (for reference)
-
 influencers.db           # SQLite database (version controlled in git)
 ```
 
 ## Tips for Agents
 
-1. **Start with schema**: Run `sqlite3 influencers.db ".schema influencers"` to understand the structure
-2. **Use JSON output**: Add `-json` flag for JSON output: `sqlite3 influencers.db -json "SELECT ..."`
-3. **Use LIMIT**: Always limit results during exploration
-4. **Test SELECTs first**: Before INSERT/UPDATE/DELETE, test with SELECT
-5. **Use transactions**: For multiple operations, wrap in transaction (BEGIN/COMMIT)
-6. **Check constraints**: twitter_handle is PRIMARY KEY - handle conflicts gracefully
-7. **Use indexes**: location, followers, hebrew_writer, and excluded are indexed for fast queries
-8. **Track discovery**: Always populate `discovery_path` when adding new influencers to track sourcing
-9. **X API fields**: Use exact naming from X API model (followers, following, statuses_count, media_count)
-10. **Git safety net**: Database is version controlled - you can always revert with `git checkout influencers.db`
+- **Use JSON output**: Add `-json` flag for JSON output: `sqlite3 influencers.db -json "SELECT ..."`
+- **Use transactions**: For multiple operations, wrap in transaction (BEGIN/COMMIT)
+- **Check constraints**: twitter_handle is PRIMARY KEY - handle conflicts gracefully
+- **Use indexes**: location, followers, hebrew_writer, and excluded are indexed for fast queries
+- **Track discovery**: Always populate `discovery_path` (how found) and `rationale` (why added) when adding new influencers to track sourcing and decision-making

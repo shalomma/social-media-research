@@ -26,7 +26,8 @@ CREATE TABLE IF NOT EXISTS influencers (
     exclusion_reason TEXT,  -- Nullable, only for excluded influencers
     added_date TEXT NOT NULL,  -- ISO 8601 format
     last_verified_date TEXT,  -- ISO 8601 format
-    discovery_path TEXT,  -- How the influencer was discovered (web search, website, referral path, etc.)
+    discovery_path TEXT,  -- How the influencer was discovered (what was the search process)
+    rationale TEXT,  -- Why this influencer was added
     notes TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
