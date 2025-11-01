@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Twitter API client for accessing multiple RapidAPI endpoints.
-Supports user info, timeline, search, and replies functionality.
+Twitter API client for accessing twitterapi.io endpoints.
+Supports user info and advanced search functionality.
 """
 
 import os
@@ -16,32 +16,32 @@ load_dotenv()
 
 
 class TwitterAPIClient:
-    """Client for interacting with Twitter API via RapidAPI."""
+    """Client for interacting with Twitter API via twitterapi.io."""
 
-    BASE_URL = "https://twitter-api45.p.rapidapi.com"
+    BASE_URL = "https://api.twitterapi.io"
 
     def __init__(self, api_key: str = None):
         """
         Initialize the Twitter API client.
 
         Args:
-            api_key: RapidAPI key. If not provided, reads from RAPIDAPI_KEY env var.
+            api_key: API key for twitterapi.io. If not provided, reads from XAPI_IO_API_KEY env var.
 
         Raises:
-            ValueError: If api_key is not provided and RAPIDAPI_KEY is not set.
+            ValueError: If api_key is not provided and XAPI_IO_API_KEY is not set.
         """
-        self.api_key = api_key or os.environ.get("RAPIDAPI_KEY")
+        self.api_key = api_key or os.environ.get("XAPI_IO_API_KEY")
 
         if not self.api_key:
-            raise ValueError("RAPIDAPI_KEY environment variable is not set or api_key not provided")
+            raise ValueError("XAPI_IO_API_KEY environment variable is not set or api_key not provided")
 
-    def _make_request(self, endpoint: str, params: dict) -> dict:
+    def _make_request(self, endpoint: str, params: dict = None) -> dict:
         """
         Make a request to the Twitter API.
 
         Args:
-            endpoint: API endpoint (e.g., 'screenname.php')
-            params: Query parameters
+            endpoint: API endpoint (e.g., 'twitter/user/info')
+            params: Query parameters (optional)
 
         Returns:
             dict: JSON response from the API
@@ -52,8 +52,7 @@ class TwitterAPIClient:
         url = f"{self.BASE_URL}/{endpoint}"
 
         headers = {
-            "x-rapidapi-key": self.api_key,
-            "x-rapidapi-host": "twitter-api45.p.rapidapi.com"
+            "X-API-Key": self.api_key
         }
 
         response = requests.get(url, headers=headers, params=params)
@@ -69,69 +68,46 @@ class TwitterAPIClient:
             screenname: Twitter username (without @)
 
         Returns:
-            UserInfoResponse: User info with calculated fields
+            UserInfoResponse: User info (calculated fields require separate search call)
 
         Raises:
             requests.exceptions.RequestException: If API request fails
         """
         params = {
-            "screenname": screenname
+            "username": screenname
         }
 
-        response = self._make_request("timeline.php", params)
+        response = self._make_request("twitter/user/info", params)
 
-        # Extract user data
-        user_data = response["user"]
+        # Extract user data from the 'data' wrapper
+        user_data = response["data"]
 
-        # Calculate fields from timeline
-        last_tweet_date = None
-        last_reply_date = None
-        is_hebrew_writer = False
-
-        timeline_list = response.get("timeline", [])
-
-        for item in timeline_list:
-            tweet_id = item.get("tweet_id")
-            conversation_id = item.get("conversation_id")
-            created_at = item.get("created_at")
-            lang = item.get("lang")
-
-            # Check for Hebrew content
-            if lang == "iw":
-                is_hebrew_writer = True
-
-            # Distinguish between tweets and replies
-            if tweet_id == conversation_id:
-                # This is an original tweet
-                if last_tweet_date is None:
-                    last_tweet_date = created_at
-            else:
-                # This is a reply
-                if last_reply_date is None:
-                    last_reply_date = created_at
+        # Note: The new API doesn't return timeline data in user info endpoint
+        # Calculated fields (last_tweet_date, last_reply_date, is_hebrew_writer)
+        # would require a separate search call using search_tweets(f"from:{screenname}")
 
         # Create and return Pydantic model
-        # Map API field names to our model field names
+        # Map new API field names to our model field names
         return UserInfoResponse(
-            status=user_data["status"],
-            profile=user_data["profile"],
-            blue_verified=user_data["blue_verified"],
-            verification_type=user_data.get("verification_type"),
-            affiliates=user_data["affiliates"],
-            business_account=user_data["business_account"],
-            desc=user_data["desc"],
-            name=user_data["name"],
-            website=user_data.get("website"),
-            protected=user_data.get("protected"),
+            status="active" if not user_data.get("unavailable") else "unavailable",
+            profile=user_data.get("profilePicture", ""),
+            blue_verified=user_data.get("isBlueVerified", False),
+            verification_type=user_data.get("verifiedType"),
+            affiliates=user_data.get("affiliatesHighlightedLabel", {}),
+            business_account={},  # Not provided in new API
+            desc=user_data.get("description", ""),
+            name=user_data.get("name", ""),
+            website=user_data.get("profile_bio", {}).get("entities", {}).get("url", {}).get("urls", [{}])[0].get("expanded_url") if user_data.get("profile_bio") else None,
+            protected=user_data.get("possiblySensitive"),
             location=user_data.get("location"),
-            following=user_data["friends"],
-            followers=user_data["sub_count"],
-            statuses_count=user_data["statuses_count"],
-            media_count=user_data["media_count"],
-            created_at=user_data["created_at"],
-            last_tweet_date=last_tweet_date,
-            last_reply_date=last_reply_date,
-            is_hebrew_writer=is_hebrew_writer
+            following=user_data.get("following", 0),
+            followers=user_data.get("followers", 0),
+            statuses_count=user_data.get("statusesCount", 0),
+            media_count=user_data.get("mediaCount", 0),
+            created_at=user_data.get("createdAt", ""),
+            last_tweet_date=None,  # Requires separate search call
+            last_reply_date=None,  # Requires separate search call
+            is_hebrew_writer=False  # Requires separate search call
         )
 
     def search_tweets(self, query: str, search_type: str = "Top") -> SearchResponse:
@@ -143,40 +119,44 @@ class TwitterAPIClient:
             search_type: Type of search ("Top", "Latest", "Media", "People", or "Lists")
 
         Returns:
-            SearchResponse: Filtered search results (excludes next_cursor, id, and media)
+            SearchResponse: Filtered search results
 
         Raises:
             requests.exceptions.RequestException: If API request fails
         """
         params = {
             "query": query,
-            "search_type": search_type
+            "type": search_type
         }
 
-        response = self._make_request("search.php", params)
+        response = self._make_request("twitter/tweet/advanced_search", params)
 
-        # Extract and filter timeline tweets (exclude id and media fields)
-        timeline_data = response.get("timeline", [])
+        # Extract tweets array
+        tweets_data = response.get("tweets", [])
         filtered_tweets = []
 
-        for tweet in timeline_data:
+        for tweet in tweets_data:
+            # Extract author username
+            author = tweet.get("author", {})
+            screen_name = author.get("userName", "")
+
             filtered_tweets.append(SearchTweet(
-                screen_name=tweet["screen_name"],
-                bookmarks=tweet["bookmarks"],
-                favorites=tweet["favorites"],
-                created_at=tweet["created_at"],
-                text=tweet["text"],
-                lang=tweet["lang"],
-                quotes=tweet["quotes"],
-                replies=tweet["replies"],
-                retweets=tweet["retweets"]
+                screen_name=screen_name,
+                bookmarks=tweet.get("bookmarkCount", 0),
+                favorites=tweet.get("likeCount", 0),
+                created_at=tweet.get("createdAt", ""),
+                text=tweet.get("text", ""),
+                lang=tweet.get("lang", ""),
+                quotes=tweet.get("quoteCount", 0),
+                replies=tweet.get("replyCount", 0),
+                retweets=tweet.get("retweetCount", 0)
             ))
 
         return SearchResponse(timeline=filtered_tweets)
 
 
 # Create Typer app
-app = typer.Typer(help="Twitter API client for RapidAPI endpoints")
+app = typer.Typer(help="Twitter API client for twitterapi.io endpoints")
 
 
 @app.command()

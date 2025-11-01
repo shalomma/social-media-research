@@ -1,19 +1,21 @@
 ---
 name: x-api
-description: Unified Twitter/X API client for retrieving user info, tweets, and replies via RapidAPI. Supports user lookup, tweet search, and reply fetching with a clean Typer-based CLI and agent-friendly Python interface.
+description: Unified Twitter/X API client for retrieving user info and tweets via twitterapi.io. Supports user lookup and advanced tweet search with a clean Typer-based CLI and agent-friendly Python interface.
 ---
 
-# X (Twitter) API Skill via RapidAPI
+# X (Twitter) API Skill via twitterapi.io
 
-A unified Twitter/X API client providing access to multiple endpoints through RapidAPI. Built with Typer for a clean CLI experience and designed to be agent-friendly for programmatic usage.
+A unified Twitter/X API client providing access to user information and advanced tweet search through twitterapi.io. Built with Typer for a clean CLI experience and designed to be agent-friendly for programmatic usage.
 
 ## CLI Usage
 
-The unified client (`.claude/skills/x-api/src/client.py`) provides four subcommands with beautiful, rich-formatted output.
+The unified client (`.claude/skills/x-api/src/client.py`) provides two subcommands with structured JSON output.
 
 ### 1. Get User Info
 
-Retrieve user information by screen name. Returns a structured response with user information and the date of the most recent tweet.
+Retrieve user information by screen name. Returns a structured response with user information.
+
+**Note**: The calculated fields (`last_tweet_date`, `last_reply_date`, `is_hebrew_writer`) are set to default values and require a separate search call using `search from:{username}` to populate.
 
 ```bash
 python3 client.py userinfo <screenname>
@@ -29,24 +31,23 @@ The userinfo command returns a `UserInfoResponse` Pydantic model with the follow
 ```json
 {
   "status": "active",
-  "profile": "username",
-  "rest_id": "123456789",
+  "profile": "https://pbs.twimg.com/profile_images/...",
   "blue_verified": true,
-  "verification_type": null,
-  "affiliates": [],
-  "business_account": [],
+  "verification_type": "Business",
+  "affiliates": {},
+  "business_account": {},
   "desc": "User bio description",
   "name": "Display Name",
   "website": "example.com",
-  "protected": null,
+  "protected": false,
   "location": "Location",
   "following": 100,
   "followers": 1000,
   "statuses_count": 5000,
   "media_count": 50,
-  "created_at": "Mon Jan 01 00:00:00 +0000 2020",
-  "last_tweet_date": "Thu Oct 23 16:30:00 +0000 2025",
-  "last_reply_date": "Fri Oct 24 09:55:51 +0000 2025",
+  "created_at": "2020-01-01T00:00:00.000Z",
+  "last_tweet_date": null,
+  "last_reply_date": null,
   "is_hebrew_writer": false
 }
 ```
@@ -73,12 +74,10 @@ The search command returns a `SearchResponse` Pydantic model with the following 
 {
   "timeline": [
     {
-      "type": "tweet",
-      "tweet_id": "1703108627035254988",
       "screen_name": "fishcatut",
       "bookmarks": 9,
       "favorites": 241,
-      "created_at": "Sat Sep 16 18:08:33 +0000 2023",
+      "created_at": "2023-09-16T18:08:33.000Z",
       "text": "What's going on here #cybertruck #tesla",
       "lang": "en",
       "quotes": 14,
@@ -161,9 +160,19 @@ python3 client.py search "from:NASA filter:images since:2025-01-01"
 ## Error Handling
 
 Common error scenarios:
-- **401 Unauthorized**: Invalid or missing API key - verify `RAPIDAPI_KEY` is set
+- **401 Unauthorized**: Invalid or missing API key - verify `XAPI_IO_API_KEY` is set in your `.env` file
 - **429 Too Many Requests**: Rate limit exceeded - implement delays between requests
-- **404 Not Found**: User/tweet not found - verify IDs/usernames are correct
-- **500 Server Error**: RapidAPI service issue - retry with exponential backoff
+- **404 Not Found**: User/tweet not found - verify usernames are correct
+- **500 Server Error**: twitterapi.io service issue - retry with exponential backoff
 
 The `TwitterAPIClient` automatically handles these errors and provides clear error messages.
+
+## Configuration
+
+Set the following environment variable in your `.env` file:
+
+```bash
+XAPI_IO_API_KEY=your_api_key_here
+```
+
+You can obtain an API key from [twitterapi.io](https://twitterapi.io).
