@@ -1,20 +1,19 @@
 ---
 name: influencer-db
-description: Simple SQLite database for Israeli Tech Nano-Influencers with direct SQL query access. Execute any SQL query or inspect schema. Flexible and agent-friendly.
+description: SQLite database for Israeli Tech Nano-Influencers with direct sqlite3 command-line access. Execute any SQL query or inspect schema. Simple and agent-friendly.
 ---
 
 # Israeli Tech Nano-Influencers Database
 
-A simple SQLite database with direct SQL query access for managing Israeli tech nano-influencer data. No abstractions - just raw SQL power.
+A SQLite database with direct sqlite3 command-line access for managing Israeli tech nano-influencer data. Pure SQL with no abstractions.
 
 ## Features
 
-- **Direct SQL Access**: Execute any SQL query (SELECT, INSERT, UPDATE, DELETE)
-- **Safe Mode Protection**: Blocks destructive operations by default (DROP, TRUNCATE, DELETE without WHERE)
+- **Direct sqlite3 Access**: Execute any SQL query using the sqlite3 CLI
 - **Schema Inspection**: View database schema and table structures
-- **JSON Output**: All results returned as JSON for easy parsing
-- **Auto-initialization**: Database created automatically on first use
-- **Flexible**: Agents can craft any query they need
+- **JSON Output**: Results can be returned as JSON with `.mode json`
+- **Flexible**: Craft any query you need with full SQL power
+- **Version Controlled**: Database file is tracked in git for easy collaboration
 
 ## Database Schema
 
@@ -68,88 +67,79 @@ A simple SQLite database with direct SQL query access for managing Israeli tech 
 - `idx_influencers_followers` - Fast queries by follower count
 - `idx_influencers_excluded` - Fast queries for active vs excluded
 
-## Safe Mode Protection
+## Using sqlite3
 
-**Safe mode is ENABLED by default** to prevent accidental data loss.
+The database is accessed using the `sqlite3` command-line tool (pre-installed on most systems).
 
-**Blocked operations:**
-- `DROP TABLE`, `DROP INDEX`, `DROP VIEW`, `DROP TRIGGER`
-- `TRUNCATE TABLE`
-- `DELETE FROM table` (without WHERE clause)
-- `ALTER TABLE ... DROP`
-
-**Allowed operations:**
-- `SELECT` (all queries)
-- `INSERT` (all inserts)
-- `UPDATE` (with or without WHERE)
-- `DELETE FROM table WHERE ...` (with WHERE clause)
-- `ALTER TABLE ... ADD` (adding columns)
-
-**To disable safe mode:**
+### Basic Usage
 
 ```bash
-# Option 1: Use --unsafe flag for a single query
-python3 client.py query "DROP TABLE old_table" --unsafe
+# Open database in interactive mode
+sqlite3 influencers.db
 
-# Option 2: Set environment variable to disable globally
-export DB_SAFE_MODE=false
-python3 client.py query "DROP TABLE old_table"
+# Execute a single query
+sqlite3 influencers.db "SELECT * FROM influencers LIMIT 5"
+
+# Get JSON output
+sqlite3 influencers.db ".mode json" "SELECT * FROM influencers LIMIT 5"
 ```
 
-## CLI Commands
+### Common sqlite3 Commands
 
-### 1. query - Execute SQL
-
-Execute any SQL query and get JSON results.
-
+**Meta commands (start with `.`):**
 ```bash
-cd .claude/skills/influencer-db/src
-python3 client.py query "<SQL>"
+.tables                    # List all tables
+.schema influencers        # Show table schema
+.mode json                 # Set output to JSON format
+.mode column               # Set output to column format
+.headers on                # Show column headers
+.quit                      # Exit sqlite3
 ```
+
+### SQL Query Examples
 
 #### SELECT Queries
 
 ```bash
 # Get all influencers
-python3 client.py query "SELECT * FROM influencers"
+sqlite3 influencers.db "SELECT * FROM influencers"
 
 # Get specific influencer
-python3 client.py query "SELECT * FROM influencers WHERE twitter_handle = 'oriSomething'"
+sqlite3 influencers.db "SELECT * FROM influencers WHERE twitter_handle = 'oriSomething'"
+
+# Get with JSON output
+sqlite3 influencers.db -json "SELECT * FROM influencers WHERE location LIKE '%Tel Aviv%'"
+
+# Count by location
+sqlite3 influencers.db "SELECT location, COUNT(*) as count FROM influencers GROUP BY location"
 ```
 
 #### INSERT Queries
 
 ```bash
 # Add new influencer
-python3 client.py query "INSERT INTO influencers (twitter_handle, name, location, followers, hebrew_writer, added_date, last_verified_date) VALUES ('test_user', 'Test User', 'Tel Aviv', 1500, 1, '2025-10-26', '2025-10-26')"
+sqlite3 influencers.db "INSERT INTO influencers (twitter_handle, name, location, followers, hebrew_writer, added_date, last_verified_date) VALUES ('test_user', 'Test User', 'Tel Aviv', 1500, 1, '2025-10-26', '2025-10-26')"
 
-# Add with more fields including discovery path
-python3 client.py query "INSERT INTO influencers (twitter_handle, name, role, focus, location, language, followers, following, statuses_count, media_count, hebrew_writer, engagement_potential, discovery_path, added_date) VALUES ('example', 'Example User', 'Developer', 'AI/ML', 'Israel', 'Hebrew, English', 2000, 500, 1500, 300, 1, 'HIGH', 'web search: Israeli AI developers', '2025-10-26')"
+# Add with more fields
+sqlite3 influencers.db "INSERT INTO influencers (twitter_handle, name, role, focus, location, language, followers, following, statuses_count, media_count, hebrew_writer, engagement_potential, discovery_path, added_date) VALUES ('example', 'Example User', 'Developer', 'AI/ML', 'Israel', 'Hebrew, English', 2000, 500, 1500, 300, 1, 'HIGH', 'web search: Israeli AI developers', '2025-10-26')"
 ```
 
 #### UPDATE Queries
 
 ```bash
 # Update follower count
-python3 client.py query "UPDATE influencers SET followers = 2000 WHERE twitter_handle = 'test_user'"
+sqlite3 influencers.db "UPDATE influencers SET followers = 2000 WHERE twitter_handle = 'test_user'"
 
 # Update multiple X API metrics
-python3 client.py query "UPDATE influencers SET followers = 2500, following = 600, statuses_count = 2000, media_count = 400 WHERE twitter_handle = 'test_user'"
+sqlite3 influencers.db "UPDATE influencers SET followers = 2500, following = 600, statuses_count = 2000, media_count = 400 WHERE twitter_handle = 'test_user'"
 ```
 
-### 2. schema - View Schema
-
-View database schema and structure.
+#### DELETE Queries
 
 ```bash
-# Show all tables and schemas
-python3 client.py schema
-
-# Show specific table schema
-python3 client.py schema influencers
+# Delete specific influencer
+sqlite3 influencers.db "DELETE FROM influencers WHERE twitter_handle = 'test_user'"
 ```
-
-## Usage Examples
 
 ## Database Location
 
@@ -170,18 +160,16 @@ Since it's a small, curated dataset (not a high-frequency transactional database
 ```
 .claude/skills/influencer-db/
 ├── SKILL.md              # This documentation
-├── requirements.txt      # Python dependencies (just typer)
 └── src/
-    ├── client.py        # Simple CLI (query + schema)
-    └── schema.sql       # Database schema
+    └── schema.sql       # Database schema (for reference)
 
 influencers.db           # SQLite database (version controlled in git)
 ```
 
 ## Tips for Agents
 
-1. **Start with schema**: Run `python3 client.py schema` to understand the structure
-2. **Safe mode is ON**: Destructive operations are blocked by default - use `--unsafe` flag if needed
+1. **Start with schema**: Run `sqlite3 influencers.db ".schema influencers"` to understand the structure
+2. **Use JSON output**: Add `-json` flag for JSON output: `sqlite3 influencers.db -json "SELECT ..."`
 3. **Use LIMIT**: Always limit results during exploration
 4. **Test SELECTs first**: Before INSERT/UPDATE/DELETE, test with SELECT
 5. **Use transactions**: For multiple operations, wrap in transaction (BEGIN/COMMIT)

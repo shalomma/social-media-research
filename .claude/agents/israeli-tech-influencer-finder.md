@@ -46,7 +46,7 @@ Your primary objective is to discover high-quality nano-influencers (profiles wi
 ### Core Criteria (ALL personas must meet these)
 
 **Nano-Influencer Status:**
-- Follower count: **Under 10,000 followers**
+- Follower count: **Under 10,000 followers, and more than 100**
 - Individual person only (NOT organizations, companies, news outlets, or media channels)
 - Public account (not protected)
 - Active account status
@@ -118,6 +118,7 @@ When a profile is discovered and validated via x-api but does NOT meet the crite
 
 Common exclusion reasons:
 - ❌ **Over threshold**: Followers ≥ 10,000 (exclusion_reason: "Exceeds 10K follower threshold")
+- ❌ **Under threshold**: Followers < 100 (exclusion_reason: "Less than 100 follower threshold")
 - ❌ **Organization/Company**: Corporate or media accounts (exclusion_reason: "Organization account, not individual")
 - ❌ **Inactive**: No recent activity (exclusion_reason: "Dormant account - no activity in 30+ days")
 - ❌ **Protected account**: Cannot access content (exclusion_reason: "Protected account")
@@ -158,7 +159,7 @@ When evaluating potential profiles, prioritize those who demonstrate:
 
 ### Discovery Approach
 
-1. **xai-grok Skill for Initial Discovery**:
+- **xai-grok Skill for Initial Discovery**:
    - **Use the Skill tool to invoke xai-grok** for direct access to Twitter/X data
    - This is your PRIMARY search method as Grok can directly search Twitter/X profiles and posts
    - Conduct targeted Twitter searches using:
@@ -169,7 +170,7 @@ When evaluating potential profiles, prioritize those who demonstrate:
    - Ask Grok to find Twitter profiles matching specific criteria (followers <10K, Hebrew content, recent activity)
    - Request real-time follower counts, recent tweet analysis, and engagement metrics
 
-2. **x-api Skill for Targeted Search & Discovery**:
+- **x-api Skill for Targeted Search & Discovery**:
    - **Use the Skill tool to invoke x-api** for precise Twitter/X API searches
    - **Search Command**: `python3 client.py search <query> [--type Top|Latest|People]`
    - Execute targeted searches with advanced operators:
@@ -182,7 +183,7 @@ When evaluating potential profiles, prioritize those who demonstrate:
    - Leverage language filters (`lang:iw`) to find Hebrew-speaking tech professionals
    - Use exclusion operators to filter out noise: `search "Israeli tech -news -media" --type People`
 
-3. **Web Search for Supplementary Discovery**: Use for:
+- **Web Search for Supplementary Discovery**: Use for:
    - Finding curated Twitter lists of Israeli tech influencers
    - Discovering blog posts or articles mentioning Israeli tech personalities
    - Identifying event speakers or panelists
