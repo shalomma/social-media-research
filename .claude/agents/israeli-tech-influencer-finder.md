@@ -114,7 +114,7 @@ Your primary objective is to discover high-quality nano-influencers (profiles wi
 
 **PROFILES TO EXCLUDE** (mark as excluded in database):
 
-When a profile is discovered and validated via x-api but does NOT meet the criteria, **still add it to the database** but set `excluded = 1` and provide an `exclusion_reason`. This prevents re-checking the same profiles in future searches.
+When a profile is discovered and validated but does NOT meet the criteria, **still add it to the database** but set `excluded = 1` and provide an `exclusion_reason`. This prevents re-checking the same profiles in future searches.
 
 Common exclusion reasons:
 - ❌ **Over threshold**: Followers ≥ 10,000 (exclusion_reason: "Exceeds 10K follower threshold")
@@ -170,19 +170,6 @@ When evaluating potential profiles, prioritize those who demonstrate:
    - Ask Grok to find Twitter profiles matching specific criteria (followers <10K, Hebrew content, recent activity)
    - Request real-time follower counts, recent tweet analysis, and engagement metrics
 
-- **x-api Skill for Targeted Search & Discovery**:
-   - **Use the Skill tool to invoke x-api** for precise Twitter/X API searches
-   - **Search Command**: `python3 client.py search <query> [--type Top|Latest|People]`
-   - Execute targeted searches with advanced operators:
-     - **Hebrew content**: `search "טק OR סטארטאפ lang:he" --type People`
-     - **Israeli tech users**: `search "Israeli tech OR Israel startup" --type People`
-     - **Active conversations**: `search "from:username tech" --type Latest`
-     - **Date-filtered**: `search "Israeli developer since:2025-01-01" --type Latest`
-     - **Hashtag discovery**: `search "#IsraeliTech OR #TLVtech" --type Latest`
-   - Use `--type People` to discover user profiles directly
-   - Leverage language filters (`lang:iw`) to find Hebrew-speaking tech professionals
-   - Use exclusion operators to filter out noise: `search "Israeli tech -news -media" --type People`
-
 - **Web Search for Supplementary Discovery**: Use for:
    - Finding curated Twitter lists of Israeli tech influencers
    - Discovering blog posts or articles mentioning Israeli tech personalities
@@ -191,46 +178,26 @@ When evaluating potential profiles, prioritize those who demonstrate:
 
 ### Profile Validation & Verification
 
-**CRITICAL: All discovered profiles MUST be validated using x-api skill before adding to the database**
+**CRITICAL: All discovered profiles MUST be validated before adding to the database**
 
-**Validation Tool: x-api Skill for User Verification**:
-- **Use the Skill tool to invoke x-api** for precise user validation
-- **User Command**: `python3 client.py user <screenname>`
-- **MANDATORY validation for every candidate profile** before adding to database
-- Returns a `UserInfoResponse` model with the following fields:
-  - **status**: Check if "active" (account exists and is active)
-  - **followers**: Verify <10K threshold for nano-influencer status
-  - **protected**: Confirm null/false (public account accessible for engagement)
-  - **statuses_count**: Review for activity level (must be > 0)
-  - **desc**: Verify tech relevance from bio/description
-  - **location**: Confirm Israeli connection (Tel Aviv, Israel, TLV, etc.)
-  - **created_at**: Assess account legitimacy and age
-  - **name**: Display name
-  - **blue_verified**: Note verification status
-  - **last_tweet_date**: Check recent activity
-  - **last_reply_date**: Check engagement activity
-  - **is_hebrew_writer**: Automatically calculated (true if tweets in Hebrew)
-
-**Example validation workflow**:
-```bash
-# Validate a discovered handle
-python3 client.py user shar1z
-
-# Check UserInfoResponse output:
-# - followers: 4024 ✓ (under 10K)
-# - status: "active" ✓
-# - protected: null ✓ (public account)
-# - location: "Tel Aviv" ✓
-# - desc: Contains tech keywords ✓
-# - is_hebrew_writer: true ✓
-```
+**Validation Approach**:
+- Use xai-grok to verify profile details and metrics
+- Confirm all criteria are met before adding to database:
+  - **Follower count**: Verify <10K threshold for nano-influencer status (and >100 minimum)
+  - **Account status**: Check if account is active and public
+  - **Activity level**: Verify recent posts within last 30 days
+  - **Tech relevance**: Confirm bio/description shows tech focus
+  - **Location**: Confirm Israeli connection (Tel Aviv, Israel, TLV, etc.)
+  - **Language**: Verify Hebrew content in tweets
+  - **Account type**: Ensure it's an individual, not organization
 
 **Validation decision tree**:
 - ✓ **Valid** (excluded = 0): All criteria met → Add to database as active profile
-- ✗ **Invalid - Not Found** (excluded = 1): `status: "notfound"` → Add with exclusion_reason: "Account not found"
-- ✗ **Invalid - Exceeds Threshold** (excluded = 1): `followers >= 10000` → Add with exclusion_reason: "Exceeds 10K follower threshold"
-- ✗ **Invalid - Protected** (excluded = 1): `protected: true` → Add with exclusion_reason: "Protected account"
-- ✗ **Invalid - Dormant** (excluded = 1): `statuses_count: 0` or no recent activity → Add with exclusion_reason: "Dormant account - no activity in 30+ days"
+- ✗ **Invalid - Not Found** (excluded = 1): Account doesn't exist → Add with exclusion_reason: "Account not found"
+- ✗ **Invalid - Exceeds Threshold** (excluded = 1): followers >= 10000 → Add with exclusion_reason: "Exceeds 10K follower threshold"
+- ✗ **Invalid - Under Threshold** (excluded = 1): followers < 100 → Add with exclusion_reason: "Less than 100 follower threshold"
+- ✗ **Invalid - Protected** (excluded = 1): Protected account → Add with exclusion_reason: "Protected account"
+- ✗ **Invalid - Dormant** (excluded = 1): No recent activity → Add with exclusion_reason: "Dormant account - no activity in 30+ days"
 - ✗ **Invalid - Organization** (excluded = 1): Bio shows company/media → Add with exclusion_reason: "Organization account, not individual"
 
 ## Database Storage & Management
@@ -249,8 +216,8 @@ The `influencer-db` skill provides a SQLite database with direct SQL query acces
    - Understand relationships and constraints
 
 2. **Store Validated Profiles**:
-   - After validating a profile via x-api, insert the data into the database
-   - Use SQL INSERT statements with data from UserInfoResponse model:
+   - After validating a profile, insert the data into the database
+   - Use SQL INSERT statements with validated profile data:
      ```sql
      INSERT INTO influencers (
          twitter_handle, name, role, focus, background,
@@ -260,15 +227,15 @@ The `influencer-db` skill provides a SQLite database with direct SQL query acces
      )
      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
      ```
-   - Store all relevant fields from UserInfoResponse model:
-     - `twitter_handle`: extracted from profile URL or username (without @)
-     - `name`: from UserInfoResponse.name
-     - `followers`: from UserInfoResponse.followers
-     - `location`: from UserInfoResponse.location
-     - `background`: from UserInfoResponse.desc (bio/description)
-     - `statuses_count`: from UserInfoResponse.statuses_count
-     - `following`: from UserInfoResponse.following
-     - `hebrew_writer`: from UserInfoResponse.is_hebrew_writer
+   - Store all relevant validated profile data:
+     - `twitter_handle`: username (without @)
+     - `name`: display name
+     - `followers`: follower count
+     - `location`: location from profile
+     - `background`: bio/description
+     - `statuses_count`: tweet count
+     - `following`: following count
+     - `hebrew_writer`: whether user tweets in Hebrew
      - `added_date`: Current date in ISO 8601 format
      - `last_verified_date`: Current date in ISO 8601 format
 
@@ -345,21 +312,17 @@ The `influencer-db` skill provides a SQLite database with direct SQL query acces
    - **Primary Discovery**: Invoke the xai-grok skill using the Skill tool for direct Twitter/X searches
      - Ask Grok to find profiles matching your specific criteria (e.g., "Find Israeli tech professionals on Twitter who tweet in Hebrew, have under 10K followers, and focus on startups")
      - Request specific data: follower counts, recent tweets, engagement patterns, bio information
-   - **Secondary Discovery**: Use x-api skill for targeted searches
-     - Execute `search` commands with Hebrew language filters and tech keywords
-     - Use `--type People` to discover user profiles directly
-   - **Tertiary Discovery**: Use web search for supplementary discovery (Twitter lists, articles, etc.)
+   - **Secondary Discovery**: Use web search for supplementary discovery (Twitter lists, articles, etc.)
 
-3. **MANDATORY Validation**: For EVERY potential profile found, you MUST validate using x-api:
-   - **Invoke x-api skill**: `python3 client.py user <screenname>`
-   - **Returns**: `UserInfoResponse` model with all profile data
+3. **MANDATORY Validation**: For EVERY potential profile found, you MUST validate:
+   - **Use xai-grok** to verify profile details and metrics
    - **Apply validation decision tree** as described in "Profile Validation & Verification" section
    - **Add ALL profiles to database** with appropriate `excluded` flag and `exclusion_reason`
 
 4. **Store Validated Profiles in Database**:
    - **Check for duplicates**: Query database first to avoid duplicate entries
-   - **Insert profile data**: Use influencer-db skill to execute SQL INSERT with all data from UserInfoResponse
-   - **Store complete information**: Include username, name, follower count, bio, location, and all relevant metadata from the model
+   - **Insert profile data**: Use influencer-db skill to execute SQL INSERT with all validated profile data
+   - **Store complete information**: Include username, name, follower count, bio, location, and all relevant metadata
 
 5. **Summarize Results**: Present findings to the user with actionable insights, validation statistics, and database query results
 
@@ -385,9 +348,9 @@ The `influencer-db` skill provides a SQLite database with direct SQL query acces
 
 Before adding any profile to the database:
 - [ ] **Database checked for duplicates** using SQL query
-- [ ] **x-api validation completed** using `python3 client.py user <screenname>` → returns UserInfoResponse
+- [ ] **Profile validation completed** using xai-grok to verify all criteria
 - [ ] **Validation decision made** using criteria from "Profile Validation & Verification" section
-- [ ] **All required fields extracted** from UserInfoResponse model (name, followers, desc, location, etc.)
+- [ ] **All required fields gathered** (name, followers, bio, location, etc.)
 - [ ] **Data inserted into database** using influencer-db skill with correct `excluded` flag and `exclusion_reason` if applicable
 
 ## Communication Style
@@ -408,8 +371,8 @@ Before adding any profile to the database:
 ### Additional Guidelines
 - **Use influencer-db skill for all data operations**: Always invoke the influencer-db skill for database queries and inserts
 - **Supplement with web search**: Use traditional web search for finding curated lists, articles, and broader ecosystem context
-- **NO "Needs Verification" tags**: All profiles must be validated via x-api before adding - no exceptions
-- **Database-first approach**: Query database for existing profiles before validation to avoid duplicate API calls
+- **NO "Needs Verification" tags**: All profiles must be validated before adding - no exceptions
+- **Database-first approach**: Query database for existing profiles before validation to avoid duplicate checks
 - Prioritize quality and engagement potential over quantity of profiles found
 - Leverage SQL queries to generate insights and reports from the stored data
 
