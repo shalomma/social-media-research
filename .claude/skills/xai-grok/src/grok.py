@@ -4,8 +4,8 @@ xAI Grok API integration script with agentic tool calling for Claude Code skills
 Usage: python grok.py "Your query here" [OPTIONS]
 
 Available Grok 4 Models:
-  - grok-4 (alias for grok-4-0709) - Highest quality model, 256k context [DEFAULT]
-  - grok-4-fast-reasoning - Cost-efficient reasoning, 2M context
+  - grok-4 (alias for grok-4-0709) - Highest quality model, 256k context
+  - grok-4-fast-reasoning - Cost-efficient reasoning, 2M context [DEFAULT]
   - grok-4-fast-non-reasoning - Cost-efficient non-reasoning, 2M context
 
 Features:
@@ -30,8 +30,8 @@ app = typer.Typer(
     help="xAI Grok API integration with agentic tool calling for Claude Code skills.",
     epilog="""
         Available Grok 4 Models:
-          grok-4                    Highest quality (256k context) [DEFAULT]
-          grok-4-fast-reasoning     Cost-efficient reasoning (2M context)
+          grok-4                    Highest quality (256k context)
+          grok-4-fast-reasoning     Cost-efficient reasoning (2M context) [DEFAULT]
           grok-4-fast-non-reasoning Cost-efficient non-reasoning (2M context)
     
         Examples:
@@ -54,7 +54,7 @@ def main(
     model: Annotated[str, typer.Option(
         "--model", "-m",
         help="Grok model to use"
-    )] = "grok-4",
+    )] = "grok-4-fast-reasoning",
     temperature: Annotated[float, typer.Option(
         "--temperature", "-t",
         help="Temperature for response generation"
